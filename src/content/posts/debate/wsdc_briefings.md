@@ -151,14 +151,14 @@ In some tournaments, the 3rd speaker is NOT ALLOWED to include NEW arguments.
 
 ### On “New materials” at 3rd speaker
 
-* Both 3rd speakers should respond to what has happened in the debate before their speech. "Responding" is a broad term covering:
+* Both 3rd speakers should respond to what has happened in the debate before their speech. **"Responding"** is a broad term covering:
      1. **Direct rebuttal** to an argument that the other team has made, which means providing a critique of the logic in the argument or providing new explanations for why the conclusion reached in the other side's arguments are wrong.
      2. **Weighing of arguments** by providing analysis of the relative importance of arguments or impacts.
      3. **Indirect comments or analysis about an existing clash point:** providing new conclusions or impacts which can be weighed against the conclusions reached by the other team.
      4. **New contextual or characterisation** analysis which broaden the understanding of conclusions reached by either team.
      5. **New examples** which provide deeper understanding of the arguments being made or existing rebuttal.
 * The above-mentioned forms of responsiveness often involve new ideas, logic, examples, components of arguments or new lines of rebuttal. It is acceptable for third speakers to bring these new aspects into their speeches.
-* **"Newness"** in a third speech is not sufficient justification to discredit material at third. We encourage judges to think more critically about whether material meets the definition of "responsiveness" as outlined above and give credit to the argument when it does.
+* **"Newness"** in a third speech is not sufficient justification to discredit material at third. We encourage judges to think more critically about whether material meets the definition of **"responsiveness"** as outlined above and give credit to the argument when it does.
 
 ## Specific to Reply speaker
 
