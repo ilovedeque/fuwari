@@ -233,7 +233,9 @@ For example, on the motion "THW allow for the sale and purchase of organs," a re
 * **Notes on options for Opp if a definition is unfair:**
   * There is **no obligation on Opposition to challenge** - they can choose to proceed with the faulty definition.
   * If you are persuaded that a definitional challenge is valid, this should reflect on your assessment of Proposition’s strategy (their understanding of the debate).
-  * **Debates are not automatically won or lost by definitional challenges.**
+  :::warning
+  **Debates are not automatically won or lost by definitional challenges.**
+  :::
 
 ![Challenges of unfair definitions](/debate/unfair_def.png)
 
@@ -248,8 +250,10 @@ _Type 1: This House Would... - This house would ban smoking._
 * If Proposition teams do so, the debate is then between the action in the way Proposition implements it and Opposition’s stance. Here, that would translate into banning smoking with the punishment Proposition suggests, rather than any punishment Opposition would prefer to oppose.
 * Opposition can propose a **counter-model** too (once again, not compulsory), and if they do, the motion becomes Proposition model v. Opposition model. However, opposition has the **same amount of fiat** that proposition does to implement their countermodel. If they require more, they should prove that they can get it.
   * In this debate, Opposition can regulate access to smoking, tax cigarettes and even restrict it to smoking zones. In this case, the debate is between this particular model, and Proposition model.
+:::caution
 * **Some motions make what opposition has to implement clear** in the motion itself, e.g.: THW require non-violent criminals to perform community service rather than go to prison.
 * Here opposition cannot choose to model it only as house arrest, or fines.
+:::
 
 ### Policy Debates - other forms
 
@@ -263,6 +267,7 @@ _Motion example: THW create schools that teach in endangered Indigenous language
 
 * Once you read a motion, the debate rests on the assumption that the action specified in the motion can be taken – this is ‘Proposition fiat’.
 
+:::caution
 **NOT LEGITIMATE AND IN VIOLATION OF FIAT:**
 
 * ‘Because politicians are racist, they will not want to set up schools like these’ - This is a criticism that explains why this will be a hard policy to pass overall, but does not make a comment on the policy’s merits or demerits. It is not a legitimate Opposition line.
@@ -271,6 +276,7 @@ _Motion example: THW create schools that teach in endangered Indigenous language
 **LEGITIMATE AND PROTECTED BY FIAT:**
 
 * These schools will not be well funded and therefore they will see lower quality of education - this acknowledges that the schools will be created, but questions how good they will be and what the impact of that will be on Indigenous children.
+:::
 
 ### “This House Believes That” Motions
 
@@ -280,7 +286,73 @@ _Type 1: This House believes that X... (where X is not an action being performed
 * Example 2: This House believes that benevolent dictatorships are better than weak democracies.
 * Example 3: This House believes there is too much money in sports.
 * This type of motion does not require a policy set up (as opposed to a motion that says THW ban labour unions) and just needs proposition teams to contrast the values in the motion (e.g.: benevolent dictatorships v. weak democracies, too much money v. a world without that extent of money).
-* **If a motion specifies a comparative, e.g. TH prefers X to Y, THW do X over Y, the Opposition must defend Y. They cannot create their own comparative.**
+:::caution
+**If a motion specifies a comparative, e.g. TH prefers X to Y, THW do X over Y, the Opposition must defend Y. They cannot create their own comparative.**
+:::
+
+_Type 2: This House Believe that X should do Y - THBT parents should adopt children instead of having their own biological children._
+
+* This debate happens from a perspective of a **neutral observer**. It is not necessary to show why it is in the interest of X do to Y. However, teams must show why X has a duty to do Y.
+* In this debate, debaters are required to show why parents have a **duty (moral or otherwise)** to adopt children.
+* Proposition teams may claim that adopting children is **beneficial** for those children, but they must also prove why aspiring parents have a duty to help those children.
+* The Opposition has to show why parents do not have an obligation to adopt children (they can set up what **metrics** they use to measure this obligation).
+:::caution 
+Depending on the debate, opposition may also need to go a step further to show that an obligation against Y exists, e.g.: THBT the environmental movement should use violence to achieve its goals (here, opp teams should show that they should not use violence).
+:::
+
+### “This House Regrets” Motions
+
+_This house Regrets X - This House Regrets the use of affirmative action in universities for racial minorities._
+
+* Proposition has to prove that a world where **X never existed would be better**. This motion is **retrospective**.
+* Propositions should explicitly establish **what the world would look like** if affirmative action hadn’t existed in history. They might say for example that there will have been more willingness to invest heavily in free primary education for racial and ethnic minorities. They need to prove that this **counterfactual** is the likely alternative, as well as that it is a preferred alternative to affirmative action.
+* Opposition can challenge the **likelihood of the counterfactual**, as well as the **desirability of the counterfactual** if they concede it. As an example, opp teams can say that in the absence of affirmative action, countries will have done nothing for racial and ethnic minorities (with reasons). They could also concede prop’s counterfactual and argue that affirmative action is better than these investments, or would facilitate better these investments than prop.
+:::caution
+**Note:** Teams can make future based arguments as well, because if a phenomenon/event sparked off a trend that will likely result in harms, that is still regrettable as well.
+:::
+
+### “This House Supports/Opposes” Motions
+
+_This House opposes/supports X - This House Opposes the use of affirmative action in universities for racial minorities._
+
+* Although similar to regrets debates, Proposition teams **oppose X in the current context**, rather than go back in time and imagine a world where X never existed.
+* Proposition teams do not need to take on the burden that affirmative action never existed, or that all affirmative action should be immediately scrapped. The debate is **a judgement about affirmative action as a policy.**
+* However, when providing arguments for this motion, it is still important to **describe how a future world without affirmative action** would play out in explaining its harms and benefits.
+* Opposition teams **can challenge whether the current world would look the same way** that proposition says it would, or concede it and argue that this is a worse world.
+
+### “This House Prefers” Motions
+
+_Type 1: This House prefers X to Y: THP social media sites based on a subscription model over those based on an advertisement model._
+
+* In these motions, **teams must only defend the alternative set up in the motion, and not create new alternative or say they prefer a mix of both X and Y.**
+* Proposition must argue that social media sites which rely on subscriptions as a means of acquiring profit are preferable to those which rely on advertisements. Opposition must conversely argue that social media sites based on an advertisements profit model are better than those based on subscriptions.
+
+_Type 2: This House prefers X: THP social media sites based on a subscription model._
+
+* In these types of motions, **Opposition must defend the status quo**, or a conceivable world the status quo trends toward.
+* Proposition must argue for social media sites based on subscriptions. Opposition is still bound to defend the specific comparison set up in the motion and therefore must defend the profit models of social media sites as they are in the status quo. Opposition cannot argue for abolishing social media/non-profit social media sites/other comparatives.
+* However, the Opposition may claim that the **current situation is changing**, why this change is likely; and why it is preferable to the Proposition.
+
+_Type 3: This House prefers a world in which X: THP a world where social media sites ran on subscription-based models._
+
+* These require the teams to prove that a world in which X (did not) exist is a preferable world to the status quo.
+* This **motion is also retrospective** (similar to This House regrets) in nature and requires teams to debate how the world would have progressed had social media sites relied on subscriptions for profit. Therefore, **Opposition cannot argue that there will be backlash** as social media sites set prices of their services as in the alternative world, social media sites which did not set subscription prices would never have existed.
+
+### Actor Motions
+
+_This House, as X - TH, as a parent, would not send their children to a private school._
+
+* Actor motions require that the debate happens from the **specific perspective of the actor** in the motion.
+* All arguments must be linked to **why a certain actor X would care** about a certain action. Therefore, the arguments should be linked to the interests, benefits or harms that are to accrue to the actor in a debate.
+* This does not mean that the actor is always selfish and that principled arguments cannot be made in this debate. Instead, debaters have to go the extra mile in explaining why the actor would hold on to such principles or points of views.
+* In this specific motion, the debate occurs from the perspective of the parent, not from the perspective of broader society.
+
+:::caution
+_However, “THBT X Should” is not an actor Motion: “THBT parents should not send their children to private schools.”_
+
+* Debaters can still claim that the interest of the parent should be prioritized, but this time as a neutral observer and may also include other interests.
+* In these motion types, teams must prove why a specific actor has a duty (moral or other) to act in a certain way.
+:::
 
 ---
 
