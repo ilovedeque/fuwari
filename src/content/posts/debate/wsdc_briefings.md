@@ -220,19 +220,67 @@ In some tournaments, the 3rd speaker is NOT ALLOWED to include NEW arguments.
 For example, on the motion "THW allow for the sale and purchase of organs," a reasonable definition would be: "_Allowing people to receive compensation for a kidney, a portion of liver/lungs, bone marrow, etc. Critical organs can be sold by family members in cases of death._", while unreasonable definitions would be: "_Incentives for blood donation._" (unfair for opposition), "_Paying to take away your heart, brain when you are alive._" (unfair for proposition).
 :::
 
-* Some unreasonable definitions (You should avoid them):
+#### Some unreasonable definitions (You should avoid them):
 
-:::Important
-To-do.
-:::
+| Unreasonable definitions                                                                                   | Examples                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Squirreling:** Distorting the topic and defining it in a way that violates the spirit of the motion.     | “_THW ban gambling_” cannot be defined as banning risky behaviors such as taking hard drugs, as a way of “gambling with one’s life”. Gambling has an obvious meaning, which is the game, betting or staking of money or something of value, on the outcome of a a or an uncertain event whose result is determined by chance.                                                                                                                                     |
+| Disallowing side opposition **room for debate.**                                                           | “_TH supports cosmetic surgery_” cannot be defined as supporting it only for burn victims. This would make it impossible for Opposition to do the debate.                                                                                                                                                                                                                                                                                                         |
+| Refusing to debate the motion at the level of **specificity or abstraction** the motion requires.          | In “_THW restrict civil liberties in the name of national security_”, a definition that defends exclusively compulsory ID cards is too narrow. Compulsory ID cards may be an example of a national security policy that is defended by the Proposition team, but the debate extends beyond this example to a more general principle.                                                                                                                              |
+| **Place-setting:** arbitrarily narrowing the debate to specific places not specified by the motion.        | In “_THW ban commercial surrogacy_”, it is not legitimate to set the debate “only in low-income nations”. Examples from these countries may be used, but the debate has a global context. However, in THW ban non-democratic countries from hosting international sporting events, Proposition can identify reasonable criteria for what constitutes a democracy.                                                                                                 |
+| **Time-setting:** arbitrarily narrowing the debate to a time that is **not** the present when unspecified. | THBT citizens should engage in civil disobedience to protest unjust laws: Proposition cannot define the policy in the context of apartheid in South Africa from 1948 until the 1990s, even though they may use this as an example.<br>THBT NATO should not have withdrawn combat troops from Afghanistan: Proposition can set the context of the debate to the period when they contemplated the withdrawal of troops (2011-2014) as it’s implicit in the motion. |
 
----
+* **Notes on options for Opp if a definition is unfair:**
+  * There is **no obligation on Opposition to challenge** - they can choose to proceed with the faulty definition.
+  * If you are persuaded that a definitional challenge is valid, this should reflect on your assessment of Proposition’s strategy (their understanding of the debate).
+  * **Debates are not automatically won or lost by definitional challenges.**
 
-# Judging
+![Challenges of unfair definitions](/debate/unfair_def.png)
 
-:::Important
-To-do.
-:::
+## Types of Motions
+
+### Policy debates - "This House Would"
+
+_Type 1: This House Would... - This house would ban smoking._
+
+* Prop teams may use a **‘model/policy’** to explain how they want to implement the action (not compulsory).
+* In this debate, Proposition may do this through a **phased-out policy**, after which point they will levy fines on smokers. During the phase out, they will re-skill workers in the tobacco industry.
+* If Proposition teams do so, the debate is then between the action in the way Proposition implements it and Opposition’s stance. Here, that would translate into banning smoking with the punishment Proposition suggests, rather than any punishment Opposition would prefer to oppose.
+* Opposition can propose a **counter-model** too (once again, not compulsory), and if they do, the motion becomes Proposition model v. Opposition model. However, opposition has the **same amount of fiat** that proposition does to implement their countermodel. If they require more, they should prove that they can get it.
+  * In this debate, Opposition can regulate access to smoking, tax cigarettes and even restrict it to smoking zones. In this case, the debate is between this particular model, and Proposition model.
+* **Some motions make what opposition has to implement clear** in the motion itself, e.g.: THW require non-violent criminals to perform community service rather than go to prison.
+* Here opposition cannot choose to model it only as house arrest, or fines.
+
+### Policy Debates - other forms
+
+_Type 2: A motion being phrased in a different way to “This House would...” can also be a policy motion as long as it prescribes an action that can reasonably be implemented in multiple ways, e.g.: THBT the US should should sanction Saudi Arabia._
+
+* It is useful for Proposition to explain what sanctions and how they are phased in, and what criteria Saudi Arabia needs to meet for them to remove these sanctions.
+
+#### Proposition Fiat
+
+_Motion example: THW create schools that teach in endangered Indigenous languages._
+
+* Once you read a motion, the debate rests on the assumption that the action specified in the motion can be taken – this is ‘Proposition fiat’.
+
+**NOT LEGITIMATE AND IN VIOLATION OF FIAT:**
+
+* ‘Because politicians are racist, they will not want to set up schools like these’ - This is a criticism that explains why this will be a hard policy to pass overall, but does not make a comment on the policy’s merits or demerits. It is not a legitimate Opposition line.
+* However, Opposition can question whether Proposition policy will work in the way that proposition claims it will.
+
+**LEGITIMATE AND PROTECTED BY FIAT:**
+
+* These schools will not be well funded and therefore they will see lower quality of education - this acknowledges that the schools will be created, but questions how good they will be and what the impact of that will be on Indigenous children.
+
+### “This House Believes That” Motions
+
+_Type 1: This House believes that X... (where X is not an action being performed, but is a value judgement comparing two things):_
+
+* Example 1: This House believes that labour unions are becoming obsolete.
+* Example 2: This House believes that benevolent dictatorships are better than weak democracies.
+* Example 3: This House believes there is too much money in sports.
+* This type of motion does not require a policy set up (as opposed to a motion that says THW ban labour unions) and just needs proposition teams to contrast the values in the motion (e.g.: benevolent dictatorships v. weak democracies, too much money v. a world without that extent of money).
+* **If a motion specifies a comparative, e.g. TH prefers X to Y, THW do X over Y, the Opposition must defend Y. They cannot create their own comparative.**
 
 ---
 
