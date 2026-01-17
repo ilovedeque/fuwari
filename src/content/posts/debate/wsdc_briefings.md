@@ -360,7 +360,7 @@ _However, “THBT X Should” is not an actor Motion: “THBT parents should not
 
 ## The WSDC Judging Criteria
 
-### Content (40%)
+### Content (40% - 40 points)
 
 * Deals with **WHAT** is being presented.
 * Evaluates the quality of content.
@@ -368,7 +368,7 @@ _However, “THBT X Should” is not an actor Motion: “THBT parents should not
 * Even if materia is **not explicitly flagged** as rebuttal, it may be responsive to the other side's material.
 * If an argument or rebuttal is weak / poorly developed, it is generally a content weakness.
 
-### Style (40%)
+### Style (40% - 40 points)
 
 * Style deals with **HOW** the content is presented.
 * **Style does NOT include Accents. A speaker's accent (foreign-ness or familarity of an accent, or preceived harshness or pleasantness of an accent) should never be in consideration when scoring for style.**
@@ -376,6 +376,143 @@ _However, “THBT X Should” is not an actor Motion: “THBT parents should not
 * Style also does **not include the format** speakers choose to organise and deliver their speech (palm cards, sheets of paper, etc.)
 * Style includes **body language**, **pace of speech**, **volume and tonal variations**, **choice of vocabulary** (too technical or too lay? Emotive or dry?), **eye contact maintained**, or **fixated on notes.**
 * Bad style typically hinders the intelligibility or persuasiveness of the argumentation offered, and could include **mumbling, shouting too loudly, or speaking too quickly to be understood.**
+
+### Strategy (20% - 20 points)
+
+* Deals with **WHY** content is said.
+* It's the sum of choices that a team makes in order to win a debate.
+* It includes **interpretation** and relevance of the motion, **time allowcation**, structuring of the speech (**prioritization**), **consistency** between arguments and speeches, dealing with **POIs** in your speech.
+* Strategy points are awarded when a speaker identifies and **addresses the right issues** in the debate, **even if they don't analyse these issues very well.**
+* Good strategy can be **independent of good content**, and is intrinsically tied to good engagement.
+
+:::warning
+* Rather than rigidly seeing these three parts as discrete elements when determining speaker scores, these three parts should help a judge understand what team did the best job during the debate overall.
+* The speaker scores are a mathematical expression of your decision and they help you evaluate the individual performance of a speaker.
+:::
+
+## Speaker Scale
+
+:::note
+* Main speeches are marked out of 100%.
+* The WSDC speaker scale is between 60 - 80.
+* The average speech is 70.
+* Half marks (0.5) are the lowest fraction allowed.
+* Reply speeches are marked out of 50%.
+* An average reply speech is 35.
+:::
+
+![WSDC Speaker Scale](/debate/speaker_scale.png)
+
+## Scoring Substantive Speeches
+
+<table>
+  <tr>
+    <th>Mark</th>
+    <th>Standard</th>
+  </tr>
+  <tr>
+    <td>60</td>
+    <td>
+      <ul>
+        <li>Content is not relevant to the motion and what the team needs to prove.</li>
+        <li>All points made are claims, with no analysis, and are confusing.</li>
+        <li>The speech is hard to follow throughout, so it is hard to give it any credit.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>61 - 63</td>
+    <td>
+      <ul>
+        <li>A few marginally relevant claims.</li>
+        <li>No analysis provided in the claims, which are mainly lines without explanation.</li>
+        <li>Parts of the speech are clear, but significant parts are still hard to follow.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>64 - 66</td>
+    <td>
+      <ul>
+        <li>Some of the points made are relevant to the debate.</li>
+        <li>Arguments / Rebuttals are made with some explanation and analysis, but with significant logical gaps in the explanation.</li>
+        <li>Sometimes the speech is difficult to follow.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>67 - 69</td>
+    <td>
+      <ul>
+        <li>Most of the points made are relevant to the debate.</li>
+        <li>All arguments / rebuttals have some explanation, but it still has logical and analytical gaps in important parts of the argument and lacks evidence.</li>
+        <li>Mostly easy to follow, but some sections may still be hard to understand.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>70</td>
+    <td>
+      <ul>
+        <li>No major shortfalls, nor any strong moments.</li>
+        <li>Arguments are <b>almost exclusively relevant, although may fail to address one or more core issues sufficiently.</b></li>
+        <li><b>All arguments have sufficient explanation without major logical gaps</b> and some examples, but are simplistic and easy to attack.</li>
+        <li><b>Easy to follow throughout</b> which makes the speech understandable, though style does not necessarily serve to make the speech more persuasive.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>71 - 72</td>
+    <td>
+      <ul>
+        <li>Arguments are all relevant, and address the core issues in the debate.</li>
+        <li><b>All arguments have sufficient explanation without major logical gaps</b> and most have credible evidence. Some points raised may have minor logical gaps or deficits in explanation.</li>
+        <li>Easy to follow throughout. On occasion the style may even serve to make the speech more engaging and persuasive.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>73 - 76</td>
+    <td>
+      <ul>
+        <li>Arguments are relevant and engage with <b>the most important issues.</b> Arguments have sufficient explanation without major logical gaps.</li>
+        <li>Occasionally, the speaker provides more sophisticated and nuanced analysis, making their arguments <b>hard to attack.</b></li>
+        <li>Easy to follow throughout. On occasion the style may even serve to make the speech more engaging and persuasive.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>77 - 79</td>
+    <td>
+      <ul>
+        <li>Arguments are all relevant and well-illustrated, and address the core issues in the debate, with thorough explanations, no logical gaps, and credible examples, making them hard to attack.</li>
+        <li>Easyu to follow throughout. The style serves to make the speech's content more engaging.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>80</td>
+    <td>
+      <ul>
+        <li>Plausibly one of the best debating speeches ever given in a schools competition.</li>
+        <li>It is incredibly difficult to think up satisfactory responses to any of the arguments made.</li>
+        <li>Flawless and compelling arguments, made with outstanding delivery.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+## Scoring Reply Speeches
+
+| Mark    | Standard                                                                                                                                                                                                                        |
+|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 30      | The speaker did not describe the debate as it happened. They misunderstood or misrepresented central arguments and responses.                                                                                                   |
+| 31 - 34 | Instead of actually identifying or analysing points of clash, speaker mostly just retold the debate as it happened or attempted to keep arguing for their side.                                                                 |
+| 35      | Speaker identified the major points of clash between two teams and was able to provide some basic justification for awarding the win to the speaker's team.                                                                     |
+| 36 - 39 | Almost perfect overview of the debate. Particular interactions from the debate were analysed and used as evidence for awarding the win to the speaker's team.                                                                   |
+| 40      | Flawless analysis of the debate that just occured. Speaker was able to accurately identify turning points in the debate (including the strongest arguments and rebuttal of their opponents) and why their side wins on balance. |
+
+---
 
 # Credits
 
