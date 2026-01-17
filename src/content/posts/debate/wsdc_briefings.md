@@ -356,6 +356,27 @@ _However, “THBT X Should” is not an actor Motion: “THBT parents should not
 
 ---
 
+# Judging
+
+## The WSDC Judging Criteria
+
+### Content (40%)
+
+* Deals with **WHAT** is being presented.
+* Evaluates the quality of content.
+* Covers arguments, rebuttal, content of POIs and responses to POIs.
+* Even if materia is **not explicitly flagged** as rebuttal, it may be responsive to the other side's material.
+* If an argument or rebuttal is weak / poorly developed, it is generally a content weakness.
+
+### Style (40%)
+
+* Style deals with **HOW** the content is presented.
+* **Style does NOT include Accents. A speaker's accent (foreign-ness or familarity of an accent, or preceived harshness or pleasantness of an accent) should never be in consideration when scoring for style.**
+* **Style is NOT about immutable characteristics of an individual's voice - perceived to be a harsh vocal tone or pitch.**
+* Style also does **not include the format** speakers choose to organise and deliver their speech (palm cards, sheets of paper, etc.)
+* Style includes **body language**, **pace of speech**, **volume and tonal variations**, **choice of vocabulary** (too technical or too lay? Emotive or dry?), **eye contact maintained**, or **fixated on notes.**
+* Bad style typically hinders the intelligibility or persuasiveness of the argumentation offered, and could include **mumbling, shouting too loudly, or speaking too quickly to be understood.**
+
 # Credits
 
 This guide is made based on the AODC Briefings 2025 and the Introduction to WSDC format (English-Speaking Union).
