@@ -365,7 +365,7 @@ _However, “THBT X Should” is not an actor Motion: “THBT parents should not
 * Deals with **WHAT** is being presented.
 * Evaluates the quality of content.
 * Covers arguments, rebuttal, content of POIs and responses to POIs.
-* Even if materia is **not explicitly flagged** as rebuttal, it may be responsive to the other side's material.
+* Even if material is **not explicitly flagged** as rebuttal, it may be responsive to the other side's material.
 * If an argument or rebuttal is weak / poorly developed, it is generally a content weakness.
 
 ### Style (40% - 40 points)
