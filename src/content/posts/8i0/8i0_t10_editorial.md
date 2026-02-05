@@ -254,7 +254,7 @@ int main() {
 ```
 </details>
 
-Độ phức tạp: $O((|a+b| \log |a+b|) + |c| \log |c|) mỗi test.
+Độ phức tạp: $O((|a+b| \log |a+b|) + |c| \log |c|)$ mỗi test.
 
 ---
 
