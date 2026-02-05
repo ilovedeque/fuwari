@@ -216,6 +216,9 @@ Làm sol.
 
 Chúng ta chỉ cần sắp xếp lại các xâu kí tự rồi kiểm tra xem chúng có bằng nhau không.
 
+Độ phức tạp: $O((|a+b| \log |a+b|) + |c| \log |c|)$ mỗi test.
+
+
 <details>
 <summary>Code mẫu</summary>
 
@@ -253,8 +256,6 @@ int main() {
 
 ```
 </details>
-
-Độ phức tạp: $O((|a+b| \log |a+b|) + |c| \log |c|)$ mỗi test.
 
 ---
 
