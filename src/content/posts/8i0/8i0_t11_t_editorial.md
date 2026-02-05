@@ -9,8 +9,6 @@ draft: false
 lang: 'vi'
 ---
 
-Chấm bài tại đây: [OJ](https://inconsonantly-heliocentric-arnav.ngrok-free.dev/contest/8i0_t11_t_mirror)
-
 # Bài 1: Tích cực trị
 
 ## Tóm tắt đề bài
