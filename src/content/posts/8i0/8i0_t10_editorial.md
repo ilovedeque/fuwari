@@ -9,11 +9,15 @@ draft: false
 lang: 'vi'
 ---
 
-Chấm bài tại đây: [OJ](https://inconsonantly-heliocentric-arnav.ngrok-free.dev/contest/8i0_t10_mirror)
-
 # Bài 1: Đồng hồ
 
-Tóm tắt đề bài: Cho ba số $h, p, s$ thể hiện giờ, phút, giây của một đồng hồ điện tử. Tính $h, p, s$ hiển thị trên màn hình sau $1$ giây.
+## Tóm tắt đề bài
+
+Cho ba số $h, p, s$ thể hiện giờ, phút, giây của một đồng hồ điện tử. Tính $h, p, s$ hiển thị trên màn hình sau $1$ giây.
+
+**Ràng buộc:** $0 \le h \le 23; \ 0 \le p, s \le 59$.
+
+## Lời giải
 
 Chúng ta chỉ cần in ra $h, \ p, \ s+1$. Tuy nhiên, vẫn cần phải xét nhưng trường hợp đặc biệt khi $s=60, \ p = 60, \ h = 24$.
 
@@ -61,7 +65,13 @@ int main() {
 
 # Bài 2: Người vắng mặt
 
-Tóm tắt đề bài: Cho mảng $a$ gồm $m$ phần tử phân biệt trong khoảng $[1, n]$. In ra những số trong khoảng $[1, n]$ mà không xuất hiện trong mảng theo tứ tự từ bé đến lớn. Nếu không có số như vậy, in ra "HAPPY".
+## Tóm tắt đề bài
+
+Cho mảng $a$ gồm $m$ phần tử phân biệt trong khoảng $[1, n]$. In ra những số trong khoảng $[1, n]$ mà không xuất hiện trong mảng theo tứ tự từ bé đến lớn. Nếu không có số như vậy, in ra "HAPPY".
+
+**Ràng buộc:** $1 \le m \le n \le 10^6; \ 1 \le a_i \le n$.
+
+## Lời giải
 
 Chúng ta có thể dễ dàng thấy được nếu $m=n$ thì tất cả các số trong khoảng $[1, n]$ sẽ xuất hiện trong mảng. Từ đó, nếu điều kiện này đúng, chúng ta chỉ cần in ra "HAPPY".
 
@@ -112,11 +122,17 @@ int main() {
 
 # Bài 3: Dịch cửa sổ
 
-Tóm tắt đề bài: Cho mảng $a$ gồm $n$ phần tử. Tìm:
+## Tóm tắt đề bài
+
+Cho mảng $a$ gồm $n$ phần tử. Tìm:
 
 $$
 \max_{1 \le i \le n-m+1}(\sum_{k=i}^{i+m-1} {(a_k)})
 $$
+
+**Ràng buộc:** $1 \le n \le 10^4; \ 1 \le m \le 10^3; \ m \le n; \ |a_i| \le 10^9$.
+
+## Lời giải
 
 Chúng ta có thể duyệt hết các chỉ sổ $i$ thoả mãn điều kiện $1 \le i \le n - m + 1$ rồi tính $res=\sum_{k=i}^{i+m-1} {(a_k)}$ bằng mảng cộng dồn (prefix sum) rồi cập nhật $ans=\max(ans, \ res)$ hoặc dùng kỹ thuật cửa sổ trượt (sliding window) để tìm $\max$.
 
@@ -170,11 +186,18 @@ int main() {
 
 # Bài 4: Kẻ làm loạn
 
-Tóm tắt đề bài: Cho $t$ bộ xâu kí tự $a, b, c$ gồm chữ cái viết hoa. Trong mỗi bộ $a, b, c$, xác định xem mỗi chữ cái trong xâu kí tự $a+b$ có xuất hiện đúng cùng số lần trong xâu kí tự $c$ hay không. Nếu có, in ra "YES", ngược lại, in ra "NO".
+## Tóm tắt đề bài
+
+Cho $T$ bộ xâu kí tự $a, b, c$ gồm chữ cái viết hoa. Trong mỗi bộ $a, b, c$, xác định xem mỗi chữ cái trong xâu kí tự $a+b$ có xuất hiện đúng cùng số lần trong xâu kí tự $c$ hay không. Nếu có, in ra "YES", ngược lại, in ra "NO".
+
+Gọi $|s|$ là độ dài xâu của một xâu kí tự.
+
+**Ràng buộc:** $1 \le T \le 100; \ |a|, |b|, |c| \le 100$.
+
+## Lời giải
 
 Làm y những gì đề bài bảo (sử dụng hàm sort hoặc mảng đếm).
 
-Gọi $|s|$ là độ dài xâu của một xâu kí tự.
 
 Độ phức tạp: $O(|a+b|+|c|)$ hoặc $O((|a+b| \log |a+b|) + |c| \log |c|)$ mỗi test.
 
@@ -220,7 +243,13 @@ int main() {
 
 # Bài 5: Tìm số
 
-Tóm tắt đề bài: Cho số tự nhiên $a$, tìm số $x$ lớn nhất thoả mãn $x \le a$ sao cho các chữ số trong biểu diễn thập phân của $x$ tăng ngặt từ trái sang phải (các số $x \le 9$ được coi là thoả mãn điều kiện).
+## Tóm tắt đề bài
+
+Cho số tự nhiên $a$, tìm số $x$ lớn nhất thoả mãn $x \le a$ sao cho các chữ số trong biểu diễn thập phân của $x$ tăng ngặt từ trái sang phải (các số $x \le 9$ được coi là thoả mãn điều kiện).
+
+**Ràng buộc:** $T \le 10^6; \ 0 \le a \le 10^9$.
+
+## Lời giải
 
 **Nhận xét:** Vì các chữ số tăng ngặt nên mỗi chữ số chỉ được xuất hiện nhiều nhất một lần. Từ đó, số lượng số $x$ thoả mãn và nằm trong khoảng $[1, 10^9]$ là:
 

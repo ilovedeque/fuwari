@@ -9,11 +9,15 @@ draft: false
 lang: 'vi'
 ---
 
-Chấm bài tại đây: [OJ](https://inconsonantly-heliocentric-arnav.ngrok-free.dev/contest/8i0_t11_mirror)
-
 # Bài 1: Chấm điểm
 
-Tóm tắt đề bài: Cho $N$ bộ số $a, b, c$. Trong mỗi bộ số đó, xác định xem $\max(a, b, c) - \min(a, b, c) \le 25$ không. Nếu có, in ra $median(a, b, c)$, trong đó $median$ là trung vị. Nếu không, in ra "check again".
+## Tóm tắt đề bài
+
+Cho $N$ bộ số $a, b, c$. Trong mỗi bộ số đó, xác định xem $\max(a, b, c) - \min(a, b, c) \le 25$ không. Nếu có, in ra $median(a, b, c)$, trong đó $median$ là trung vị. Nếu không, in ra "check again".
+
+**Ràng buộc:** $N \le 10^5; \ 0 \le a, b, c \le 100$.
+
+## Lời giải
 
 Làm y những gì đề bài bảo.
 
@@ -59,9 +63,19 @@ int main() {
 
 # Bài 2: Tìm đoạn con
 
-Tóm tắt đề bài: Cho mảng $A$ gồm $n$ phần tử nguyên dương và số $k$. Tìm độ dài đoạn con liên tiếp dài nhất có tổng không vượt quá $k$.
+## Tóm tắt đề bài
 
-## Subtask 1, 2: $n \le 5000$.
+Cho mảng $A$ gồm $n$ phần tử nguyên dương và số $k$. Tìm độ dài đoạn con liên tiếp dài nhất có tổng không vượt quá $k$.
+
+**Ràng buộc:**
+
+* **Subtask 1:** $1 \le n \le 10^2; \ k \le 10^{12}; \ 0 \le a_i \le 10^6$.
+* **Subtask 2:** $1 \le n \le 5000; \ k \le 10^{12}; \ 0 \le a_i \le 10^6$.
+* **Subtask 3:** $1 \le n \le 10^5; \ k \le 10^{12}; \ 0 \le a_i \le 10^6$.
+
+## Lời giải
+
+### Subtask 1, 2:
 
 Chúng ta chỉ cần duyệt qua tất cả dãy con $(i, j)$ $(1 \le i \le j \le n)$ rồi kiểm tra xem $\sum_{x=i}^{j} {(a_x)} \le k$ không. Nếu có thì $ans=\max(ans, j - i + 1)$.
 
@@ -110,7 +124,7 @@ int main() {
 ```
 </details>
 
-## Subtask 3: $n \le 10^5$.
+### Subtask 3:
 
 **Nhận xét:**
 
@@ -168,7 +182,19 @@ int main() {
 
 # Bài 3: Numdle
 
-Tóm tắt đề bài: Cho một xâu kí tự $s$ gồm $n$ chữ số trong khoảng $[1, 9]$ và $q$ truy vấn. Với mỗi truy vấn, cho một xâu kí tự $t$ gồm $n$ chữ số trong khoảng $[1, 9]$, tính số chữ số ở $t$ mà ở đúng vị trí (kí hiệu là $C$), sai vị trị (kí hiệu là $P$) và không tồn tại (kí hiệu là $I$) trong $s$.
+## Tóm tắt đề bài
+
+Cho một xâu kí tự $s$ gồm $n$ chữ số trong khoảng $[1, 9]$ và $q$ truy vấn. Với mỗi truy vấn, cho một xâu kí tự $t$ gồm $n$ chữ số trong khoảng $[1, 9]$, tính số chữ số ở $t$ mà ở đúng vị trí (kí hiệu là $C$), sai vị trị (kí hiệu là $P$) và không tồn tại (kí hiệu là $I$) trong $s$.
+
+**Ràng buộc:** 
+
+Gọi $|x|$ là độ dài xâu của một xâu kí tự.
+
+* **Subtask 1:** $1 \le n \le 10^2; \ 1 \le q \le 10^5; \ \sum_{i=1}^{q} {|t_i|} + |s| \le 5 \times 10^5$.
+* **Subtask 2:** $1 \le n \le 10^5; \ 1 \le q \le 10^5; \ \sum_{i=1}^{q} {|t_i|} + |s| \le 5 \times 10^5; \ s_i \in \{\text{'0', '1'}\}$.
+* **Subtask 3:** $1 \le n \le 10^5; \ 1 \le q \le 10^5; \ \sum_{i=1}^{q} {|t_i|} + |s| \le 5 \times 10^5$.
+
+## Lời giải
 
 Với mỗi truy vấn, chúng ta duyệt qua kí tự $i$ $(0 \le i \le n-1)$ của $s$ và $t$. Từ đó, chúng ta có $2$ trường hợp:
 
@@ -236,11 +262,20 @@ int main() {
 
 # Bài 4: Dãy con có tổng S
 
-Tóm tắt đề bài: Cho mảng $a$ gồm $n$ phần tử. Xác định một dãy con (không cần liên tiếp) sao cho tổng dãy con đó bằng $k$. Nếu có một dãy con thoả mãn, in ra "YES" rồi in ra chỉ số của các phần tử dãy con đó. Nếu không có dãy con thoả mãn, in ra "NO".
+## Tóm tắt đề bài
+
+Cho mảng $a$ gồm $n$ phần tử. Xác định một dãy con (không cần liên tiếp) sao cho tổng dãy con đó bằng $k$. Nếu có một dãy con thoả mãn, in ra "YES" rồi in ra chỉ số của các phần tử dãy con đó. Nếu không có dãy con thoả mãn, in ra "NO".
+
+**Ràng buộc:**
+
+* **Subtask 1:** $1 \le n \le 20; \ 1 \le S \le 10^9; \ 1 \le a_i \le 100$.
+* **Subtask 2:** $1 \le n \le 100; \ 1 \le S \le 10^9; \ 1 \le a_i \le 100$.
+
+## Lời giải
 
 **Nhận xét:** Chúng ta dễ dàng có thể thấy được nếu tổng các phần tử trong mảng $a$ bé hơn $S$ thì ta sẽ không thể tìm được một dãy thoả mãn. Từ đó, nếu điều kiện đó được thoả mãn, chúng ta sẽ in ra "NO". Đồng thời, giới hạn của $S$ sẽ được giảm xuống tệ nhất là $S \le 10^4$.
 
-## Subtask 1: $n \le 20$.
+### Subtask 1:
 
 Chúng ta có thể duyệt qua tất cả trường hợp của bài toán sử dụng đệ quy (recursion) như sau:
 
@@ -310,7 +345,7 @@ int main() {
 ```
 </details>
 
-## Subtask 2: $n \le 100$.
+### Subtask 2:
 
 Chúng ta có thể dùng quy hoạch động (Dynamic Programming - DP) để giải bài toán này như sau:
 
