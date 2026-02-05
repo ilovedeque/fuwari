@@ -190,9 +190,9 @@ Cho một xâu kí tự $s$ gồm $n$ chữ số trong khoảng $[1, 9]$ và $q$
 
 Gọi $|x|$ là độ dài xâu của một xâu kí tự.
 
-* **Subtask 1:** $1 \le n \le 10^2; \ 1 \le q \le 10^5; \ \sum_{a=1}^{q} {(|t_a|)} + |s| \le 5 \times 10^5$.
-* **Subtask 2:** $1 \le n \le 10^5; \ 1 \le q \le 10^5; \ \sum_{a=1}^{q} {(|t_a|)} + |s| \le 5 \times 10^5; \ s_i \in \{\text{'0', '1'}\} \  \forall \ 1 \le i \le n$.
-* **Subtask 3:** $1 \le n \le 10^5; \ 1 \le q \le 10^5; \ \sum_{a=1}^{q} {(|t_a|)} + |s| \le 5 \times 10^5$.
+* **Subtask 1:** $1 \le n \le 10^2; \ 1 \le q \le 10^5; \ n \times (q + 1) \le 5 \times 10^5$.
+* **Subtask 2:** $1 \le n \le 10^5; \ 1 \le q \le 10^5; \ n \times (q + 1) \le 5 \times 10^5; \ s_i \in \{\text{'0', '1'}\} \  \forall \ 1 \le i \le n$.
+* **Subtask 3:** $1 \le n \le 10^5; \ 1 \le q \le 10^5; \ n \times (q + 1) \le 5 \times 10^5$.
 
 ## Lời giải
 
