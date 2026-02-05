@@ -134,19 +134,11 @@ $$
 
 ## Lời giải
 
-Chúng ta có thể duyệt hết các chỉ sổ $i$ thoả mãn điều kiện $1 \le i \le n - m + 1$ rồi tính $res=\sum_{k=i}^{i+m-1} {(a_k)}$ bằng mảng cộng dồn (prefix sum) rồi cập nhật $ans=\max(ans, \ res)$ hoặc dùng kỹ thuật cửa sổ trượt (sliding window) để tìm $\max$.
+### Cách 1:
 
-:::note
-Kỹ thuật cửa số trượt (sliding window) được áp dụng khi chúng ta tính $res=\sum_{i=1}^{m} {(a_i)}$, rồi với mỗi lần duyệt $i$ thoả mãn điều kiện $2 \le i \le n - m + 1$ (tức là di chuyển cửa sổ từ đoạn $[i-1, \ i+m-2]$ sang đoạn $[i, \ i+m-1]$), chúng ta sẽ lấy $res=res-a_{i-1}$ và $res=res+a_{i+m-1}$.
-:::
+Chúng ta có thể duyệt hết các chỉ sổ $i$ thoả mãn điều kiện $1 \le i \le n - m + 1$ rồi tính $res=\sum_{k=i}^{i+m-1} {(a_k)}$ rồi cập nhật $ans=\max(ans, \ res)$.
 
-Độ phức tạp: $O(n)$.
-
-:::warning
-Vì $n \le 10^4$, việc tính tổng trực tiếp các đoạn con vẫn được chấp nhận.
-
-Khi đó, độ phức tạp: $O(n^2)$.
-:::
+Độ phức tạp: $O(n^2)$ (nếu tính tổng trực tiếp) hoặc $O(n)$ (nếu dùng prefix sum).
 
 <details>
 <summary>Code mẫu</summary>
@@ -182,6 +174,20 @@ int main() {
 ```
 </details>
 
+### Cách 2:
+
+Chúng ta có thể dùng kỹ thuật cửa sổ trượt (sliding window) để tìm $\max$.
+
+:::note
+Kỹ thuật cửa số trượt (sliding window) được áp dụng khi chúng ta tính $res=\sum_{i=1}^{m} {(a_i)}$, rồi với mỗi lần duyệt $i$ thoả mãn điều kiện $2 \le i \le n - m + 1$ (tức là di chuyển cửa sổ từ đoạn $[i-1, \ i+m-2]$ sang đoạn $[i, \ i+m-1]$), chúng ta sẽ lấy $res=res-a_{i-1}$ và $res=res+a_{i+m-1}$.
+:::
+
+Độ phức tạp: $O(n)$.
+
+:::important
+To-do: Làm sol.
+:::
+
 ---
 
 # Bài 4: Kẻ làm loạn
@@ -196,10 +202,19 @@ Gọi $|s|$ là độ dài xâu của một xâu kí tự.
 
 ## Lời giải
 
-Làm y những gì đề bài bảo (sử dụng hàm sort hoặc mảng đếm).
+### Cách 1:
 
+Làm y những gì đề bài bảo (sử dụng mảng đếm).
 
-Độ phức tạp: $O(|a+b|+|c|)$ hoặc $O((|a+b| \log |a+b|) + |c| \log |c|)$ mỗi test.
+Độ phức tạp: $O(|a+b|+|c|)$ mỗi test.
+
+:::important
+Làm sol.
+:::
+
+### Cách 2:
+
+Chúng ta chỉ cần sắp xếp lại các xâu kí tự rồi kiểm tra xem chúng có bằng nhau không.
 
 <details>
 <summary>Code mẫu</summary>
@@ -238,6 +253,8 @@ int main() {
 
 ```
 </details>
+
+Độ phức tạp: $O((|a+b| \log |a+b|) + |c| \log |c|) mỗi test.
 
 ---
 

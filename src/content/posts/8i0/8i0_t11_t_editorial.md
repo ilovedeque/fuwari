@@ -21,7 +21,7 @@ Cho mảng $a$ gồm $n$ phần tử. Tính $\max(a) \times \min(a)$ sau khi xo�
 
 Làm y những gì đề bài bảo.
 
-Độ phức tạp: $O(n)$ hoặc $O(n \log n)$.
+Độ phức tạp: $O(n)$ (nếu duyệt qua mảng) hoặc $O(n \log n)$ (nếu dùng hàm sort).
 
 <details>
 <summary>Code mẫu</summary>
