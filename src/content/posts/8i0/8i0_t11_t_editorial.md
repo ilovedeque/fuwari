@@ -21,7 +21,7 @@ Cho mảng $a$ gồm $n$ phần tử. Tính $\max(a) \times \min(a)$ sau khi xo�
 
 Làm y những gì đề bài bảo.
 
-Độ phức tạp: $O(n)$ (nếu duyệt qua mảng) hoặc $O(n \log n)$ (nếu dùng hàm sort).
+**Độ phức tạp:** $O(n)$ (nếu duyệt qua mảng) hoặc $O(n \log n)$ (nếu dùng hàm sort).
 
 <details>
 <summary>Code mẫu</summary>
@@ -75,7 +75,7 @@ Chúng ta có thể duyệt mảng đó theo chiều ngược, kiểm tra xem ph
 
 Sau đó, chúng ta chỉ cần đảo lại mảng kết quả rồi in nó ra là xong.
 
-Độ phức tạp: $O(n)$.
+**Độ phức tạp:** $O(n)$.
 
 <details>
 <summary>Code mẫu</summary>
@@ -133,7 +133,7 @@ Cho mảng $a$ gồm $n$ phần tử. Tính khoảng cách từ phần tử đ�
 
 Chúng ta chỉ cần đếm số lượng phần tử khác nhau để kiểm tra xem phần tử đó có tồn tại không, rồi kiểm tra xem số lượng phần tử của nó có bằng $m$ không, nếu có thì in ra $(i - 1) \times 5$ (vì bạn Nam chỉ cần đi $(i-1)$ lần).
 
-Độ phức tạp: $O(n)$.
+**Độ phức tạp:** $O(n)$.
 
 <details>
 <summary>Code mẫu</summary>
@@ -185,7 +185,7 @@ Cho mảng $a$ gồm $n$ phần tử. Đếm số lượng phần tử mà xuấ
 
 Chúng ta chỉ cần dùng một mảng đếm để đếm số lượng các phần tử, sau đó xem trong mảng đếm đó, nếu số lượng phần tử lớn hơn hoặc bằng $2$ thì chúng ta thêm vào biến đếm kết quả.
 
-Độ phức tạp: $O(n)$.
+**Độ phức tạp:** $O(n)$.
 
 <details>
 <summary>Code mẫu</summary>

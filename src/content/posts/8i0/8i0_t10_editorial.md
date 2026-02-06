@@ -21,7 +21,7 @@ Cho ba số $h, p, s$ thể hiện giờ, phút, giây của một đồng hồ 
 
 Chúng ta chỉ cần in ra $h, \ p, \ s+1$. Tuy nhiên, vẫn cần phải xét nhưng trường hợp đặc biệt khi $s=60, \ p = 60, \ h = 24$.
 
-Độ phức tạp: $O(1)$.
+**Độ phức tạp:** $O(1)$.
 
 <details>
 <summary>Code mẫu</summary>
@@ -77,7 +77,7 @@ Chúng ta có thể dễ dàng thấy được nếu $m=n$ thì tất cả các 
 
 Nếu $m \lt n,$ chúng ta duyệt qua mảng $a$ và dùng mảng đếm để theo dõi những phần tử đã xuất hiện. Sau đó, chúng ta chỉ cần duyệt mảng đếm trong khoảng $[1, n]$ để tìm những số không xuất hiện trong $a,$ rồi sau đó in ra kết quả.
 
-Độ phức tạp: $O(m + n)$.
+**Độ phức tạp:** $O(m + n)$.
 
 <details>
 <summary>Code mẫu</summary>
@@ -138,7 +138,7 @@ $$
 
 Chúng ta có thể duyệt hết các chỉ sổ $i$ thoả mãn điều kiện $1 \le i \le n - m + 1$ rồi tính $res=\sum_{k=i}^{i+m-1} {(a_k)}$ rồi cập nhật $ans=\max(ans, \ res)$.
 
-Độ phức tạp: $O(n^2)$ (nếu tính tổng trực tiếp) hoặc $O(n)$ (nếu dùng prefix sum).
+**Độ phức tạp:** $O(n^2)$ (nếu tính tổng trực tiếp) hoặc $O(n)$ (nếu dùng prefix sum).
 
 <details>
 <summary>Code mẫu</summary>
@@ -182,7 +182,7 @@ Chúng ta có thể dùng kỹ thuật cửa sổ trượt (sliding window) đ�
 Kỹ thuật cửa số trượt (sliding window) được áp dụng khi chúng ta tính $res=\sum_{i=1}^{m} {(a_i)}$, rồi với mỗi lần duyệt $i$ thoả mãn điều kiện $2 \le i \le n - m + 1$ (tức là di chuyển cửa sổ từ đoạn $[i-1, \ i+m-2]$ sang đoạn $[i, \ i+m-1]$), chúng ta sẽ lấy $res=res-a_{i-1}$ và $res=res+a_{i+m-1}$.
 :::
 
-Độ phức tạp: $O(n)$.
+**Độ phức tạp:** $O(n)$.
 
 :::important
 To-do: Làm sol.
@@ -206,7 +206,7 @@ Gọi $|s|$ là độ dài xâu của một xâu kí tự.
 
 Làm y những gì đề bài bảo (sử dụng mảng đếm).
 
-Độ phức tạp: $O(|a+b|+|c|)$ mỗi test.
+**Độ phức tạp:** $O(|a+b|+|c|)$ mỗi test.
 
 :::important
 Làm sol.
@@ -216,7 +216,7 @@ Làm sol.
 
 Chúng ta chỉ cần sắp xếp lại các xâu kí tự rồi kiểm tra xem chúng có bằng nhau không.
 
-Độ phức tạp: $O((|a+b| \log |a+b|) + |c| \log |c|)$ mỗi test.
+**Độ phức tạp:** $O((|a+b| \log |a+b|) + |c| \log |c|)$ mỗi test.
 
 
 <details>
@@ -277,7 +277,7 @@ $$
 
 Vì số $x$ thoả mãn rất nhỏ, chúng ta có thể dùng hàm đệ quy để sinh ra các số này trước, sắp xếp mảng kết quả rồi dùng tìm kiếm nhị phân để tìm kết quả mỗi test.
 
-Độ phức tạp:
+**Độ phức tạp:**
 
 * Tiền xử lý: $2^{10}=1024$ lần duyệt.
 * Truy vấn: $\log 511$ mỗi test.

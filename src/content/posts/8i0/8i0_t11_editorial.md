@@ -21,7 +21,7 @@ Cho $N$ bộ số $a, b, c$. Trong mỗi bộ số đó, xác định xem $\max(
 
 Làm y những gì đề bài bảo.
 
-Độ phức tạp: $O(1)$ mỗi test.
+**Độ phức tạp:** $O(1)$ mỗi test.
 
 <details>
 <summary>Code mẫu</summary>
@@ -79,7 +79,7 @@ Cho mảng $A$ gồm $n$ phần tử nguyên dương và số $k$. Tìm độ d�
 
 Chúng ta chỉ cần duyệt qua tất cả dãy con $(i, j)$ $(1 \le i \le j \le n)$ rồi kiểm tra xem $\sum_{x=i}^{j} {(a_x)} \le k$ không. Nếu có thì $ans=\max(ans, j - i + 1)$.
 
-Độ phức tạp: $O(n^2)$.
+**Độ phức tạp:** $O(n^2)$.
 
 <details>
 <summary>Code mẫu</summary>
@@ -133,7 +133,7 @@ int main() {
 
 Vì vậy, chúng ta sẽ dùng kỹ thuật hai con trỏ (two pointers) để duyệt qua mảng $A$. Cụ thể hơn, gọi $(l, r)$ là dãy con thoả mãn tổng các phần tử không quá $k$ $(1 \le l \le r \le n)$. Với mỗi lần xét $r+1$, nếu tổng đoạn $[a_l, a_{r+1}]$ vượt quá $k$ thì chúng ta sẽ dịch chuyển biến $l$ lên $1$ đơn vị cho đến khi tổng đoạn đó không vượt quá $k$. Sau đó, chúng ta chỉ cần cập nhật $ans=\max(ans, r - l + 1)$.
 
-Độ phức tạp: $O(n)$.
+**Độ phức tạp:** $O(n)$.
 
 <details>
 <summary>Code mẫu</summary>
@@ -205,7 +205,7 @@ Sau khi duyệt xong, với mỗi chữ số $d$ từ $0$ đến $9$, chúng ta 
 
 Khi đó, $I=n-C-P$.
 
-Độ phức tạp: $O(n)$ mỗi truy vấn.
+**Độ phức tạp:** $O(n)$ mỗi truy vấn.
 
 <details>
 <summary>Code mẫu</summary>
@@ -286,7 +286,7 @@ Với vị trí thứ $i \ (1 \le i \le n)$, ta có $2$ cách lựa chọn là: 
 * Thực hiện tìm kiếm với vị trí $i+1$, trong trường hợp đã tính cả $2$ trường hợp được tạo ra, ta quay lại vị trí trước đó để xét các nhánh khác.
 * Việc kiểm tra sẽ dừng lại sau khi chúng ta đã duyệt hết các đoạn con hoặc có một dãy con thoả mãn.
 
-Độ phức tạp: $O(n \times 2^n)$.
+**Độ phức tạp:** $O(n \times 2^n)$.
 
 <details>
 <summary>Code mẫu</summary>
@@ -354,7 +354,7 @@ Chúng ta có thể dùng quy hoạch động (Dynamic Programming - DP) để g
 * Khi đó, chúng ta sẽ duyệt qua từng phần tử, cập nhật $dp$ từ lớn xuống nhỏ để tránh dùng lại phần tử nhiều lần.
 * Sau khi duyệt, nếu $dp[S]$ có giá trị hợp lệ, ta sẽ truy vết ngược lại để tìm các chỉ số.
 
-Độ phức tạp: $O(n \times \text{sum}(a))$.
+**Độ phức tạp:** $O(n \times \text{sum}(a))$.
 
 <details>
 <summary>Code mẫu</summary>
