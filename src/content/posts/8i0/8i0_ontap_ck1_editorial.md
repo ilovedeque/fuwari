@@ -127,7 +127,7 @@ int main() {
 
 Chúng ta dùng sàng nguyên tố biến đổi để tìm số ước từ $1$ đến $\max(a_i)$, rồi chúng ta duyệt qua từng phần tử trong mảng $a$ để lấy số ước của từng số và so sánh kết quả đó để ra được đáp án cần tìm.
 
-**Độ phức tạp:** $O(n + \max(a_i) \log \max(a_i))$.
+**Độ phức tạp:** $O(n + \max(a_i) \log \log \max(a_i))$.
 
 ---
 
