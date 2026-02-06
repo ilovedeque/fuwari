@@ -319,13 +319,8 @@ int main() {
     cin >> tt;
     while (tt--) {
         cin >> a;
-        auto it = lower_bound(v.begin(), v.end(), a);
-        if (*it == a) {
-            cout << a << "\n";
-        }
-        else {
-            cout << *(it - 1) << "\n";
-        }
+        auto it = upper_bound(v.begin(), v.end(), a);
+        cout << *(it - 1) << "\n";
     }
     return 0;
 }
