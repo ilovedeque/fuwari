@@ -176,7 +176,7 @@ int main() {
 
 ### Cách 2:
 
-Chúng ta có thể dùng kỹ thuật cửa sổ trượt (sliding window) để tìm $\max$. Khi đó, chúng ta tính $res=\sum_{i=1}^{m} {(a_i)}$, rồi với mỗi lần duyệt $i$ thoả mãn điều kiện $2 \le i \le n - m + 1$ (tức là di chuyển cửa sổ từ đoạn $[i-1, \ i+m-2]$ sang đoạn $[i, \ i+m-1]$), chúng ta sẽ lấy $res=res-a_{i-1}$ và $res=res+a_{i+m-1}$.
+Chúng ta có thể dùng kỹ thuật cửa sổ trượt (sliding window) để tìm $\max$. Khi đó, chúng ta tính $res=\sum_{i=1}^{m} {(a_i)}$, rồi với mỗi lần duyệt $i$ thoả mãn điều kiện $2 \le i \le n - m + 1$ (tức là di chuyển cửa sổ từ đoạn $[i-1, \ i+m-2]$ sang đoạn $[i, \ i+m-1]$), chúng ta sẽ lấy $res=res-a_{i-1}$ và $res=res+a_{i+m-1}$. Với mỗi lâần duyệt đó, chúng ta sẽ lấy $ans=\max(ans, res)$.
 
 **Độ phức tạp:** $O(n)$.
 
