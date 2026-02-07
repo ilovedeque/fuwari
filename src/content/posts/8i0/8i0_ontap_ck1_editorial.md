@@ -243,7 +243,7 @@ int main() {
 
 Gọi $res$ là một xâu kí tự chứa các chữ số.
 
-Ta duyệt từng kí tự trong $S$, nếu kí tự đó là một chữ số, cập nhật $res=res+S_i$. Còn nếu kí tự đó không phải là một chữ số, ta dùng hàm ```stoll()``` để chuyển xâu kí tự $res$ thành số nguyên, lấy $ans=\max(ans, res)$, rồi cập nhật ```res=""```.
+Ta duyệt từng kí tự trong $S$, nếu kí tự đó là một chữ số, cập nhật $res=res+S_i$. Còn nếu kí tự đó không phải là một chữ số, ta dùng hàm ```stoll()``` để chuyển xâu kí tự $res$ thành số nguyên, lấy $ans=\max(ans, res)$, rồi cập nhật ```res = ""```.
 
 **Độ phức tạp:** $O(n)$.
 
@@ -293,6 +293,88 @@ int main() {
 </details>
 
 ### Subtask 3:
+
+**Độ phức tạp:** $O(n)$.
+
+<details>
+<summary>Code mẫu</summary>
+
+```cpp
+#include <bits/stdc++.h>
+#pragma GCC optimize("O3, unroll-loops")
+#define ll long long
+#define ld long double
+#define st string
+
+using namespace std;
+
+st s, res, ans;
+int it;
+
+void solve() {
+    if (res.empty()) {
+        return;
+    }
+    it = 0;
+    while (it < res.size() && res[it] == '0') {
+        it++;
+    }
+    if (res.size() == it) {
+        if (ans.empty()) {
+            ans = "0";
+            return;
+        }
+    }
+    if (res.size() - it > ans.size()) {
+        ans = res.substr(it);
+        return;
+    }
+    if (res.size() - it < ans.size()) {
+        return;
+    }
+    for (int i = 0; i < res.size() - it; i++) {
+        if (res[i + it] > ans[i]) {
+            ans = res.substr(it);
+            return;
+        }
+        if (res[i + it] < ans[i]) {
+            return;
+        }
+    }
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    if (fopen("MAXS.inp", "r")) {
+        freopen("MAXS.inp", "r", stdin);
+        freopen("MAXS.out", "w", stdout);
+    }
+    cin >> s;
+    for (int i = 0; i < s.size(); i++) {
+        if (isdigit(s[i])) {
+            res += s[i];
+        }
+        else {
+            if (!res.empty()) {
+                solve();
+            }
+            res = "";
+        }
+    }
+    solve();
+    if (ans.empty()) {
+        cout << 0;
+    }
+    else {
+        cout << ans;
+    }
+    return 0;
+}
+
+```
+</details>
 
 ---
 
