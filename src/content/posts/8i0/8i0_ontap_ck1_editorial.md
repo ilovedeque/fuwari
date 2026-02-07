@@ -47,8 +47,10 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
-    freopen("UOCSO.inp", "r", stdin);
-    freopen("UOCSO.out", "w", stdout);
+    if (fopen("UOCSO.inp", "r")) {
+        freopen("UOCSO.inp", "r", stdin);
+        freopen("UOCSO.out", "w", stdout);
+    }
     cin >> n;
     while (n--) {
         cin >> s;
@@ -97,8 +99,10 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
-    freopen("UOCSO.inp", "r", stdin);
-    freopen("UOCSO.out", "w", stdout);
+    if (fopen("UOCSO.inp", "r")) {
+        freopen("UOCSO.inp", "r", stdin);
+        freopen("UOCSO.out", "w", stdout);
+    }
     cin >> n;
     while (n--) {
         cin >> s;
