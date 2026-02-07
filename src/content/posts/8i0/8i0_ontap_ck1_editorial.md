@@ -201,7 +201,7 @@ Cho một xâu kí tự $S$ độ dài $N$ gồm các kí tự chữ cái: $\tex
 
 ### Subtask 1:
 
-Ta duyệt từng kí tự trong $S$, nếu kí tự đó là một chữ số, cập nhật $ans=\max(ans, s_i)$.
+Ta duyệt từng kí tự trong $S$, nếu kí tự đó là một chữ số, cập nhật $ans=\max(ans, S_i)$.
 
 **Độ phức tạp:** $O(n)$.
 
@@ -240,6 +240,57 @@ int main() {
 </details>
 
 ### Subtask 2:
+
+Gọi $res$ là một xâu kí tự chứa các chữ số.
+
+Ta duyệt từng kí tự trong $S$, nếu kí tự đó là một chữ số, cập nhật $res=res+S_i$. Còn nếu kí tự đó không phải là một chữ số, ta dùng hàm ```stoll()``` để chuyển xâu kí tự $res$ thành số nguyên, lấy $ans=\max(ans, res)$, rồi cập nhật ```res=""```.
+
+**Độ phức tạp:** $O(n)$.
+
+<details>
+<summary>Code mẫu</summary>
+
+```cpp
+#include <bits/stdc++.h>
+#pragma GCC optimize("O3, unroll-loops")
+#define ll long long
+#define ld long double
+#define st string
+
+using namespace std;
+
+st s, res;
+ll ans = 0;
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    if (fopen("MAXS.inp", "r")) {
+        freopen("MAXS.inp", "r", stdin);
+        freopen("MAXS.out", "w", stdout);
+    }
+    cin >> s;
+    for (int i = 0; i < s.size(); i++) {
+        if (s[i] >= '0' && s[i] <= '9') {
+            res += s[i];
+        }
+        else {
+            if (res != "") {
+                ans = max(ans, stoll(res));
+            }
+            res = "";
+        }
+    }
+    if (res != "") {
+        ans = max(ans, stoll(res));
+    }
+    cout << ans;
+    return 0;
+}
+
+```
+</details>
 
 ### Subtask 3:
 
