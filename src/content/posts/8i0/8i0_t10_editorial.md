@@ -176,17 +176,46 @@ int main() {
 
 ### Cách 2:
 
-Chúng ta có thể dùng kỹ thuật cửa sổ trượt (sliding window) để tìm $\max$.
-
-:::note
-Kỹ thuật cửa số trượt (sliding window) được áp dụng khi chúng ta tính $res=\sum_{i=1}^{m} {(a_i)}$, rồi với mỗi lần duyệt $i$ thoả mãn điều kiện $2 \le i \le n - m + 1$ (tức là di chuyển cửa sổ từ đoạn $[i-1, \ i+m-2]$ sang đoạn $[i, \ i+m-1]$), chúng ta sẽ lấy $res=res-a_{i-1}$ và $res=res+a_{i+m-1}$.
-:::
+Chúng ta có thể dùng kỹ thuật cửa sổ trượt (sliding window) để tìm $\max$. Khi đó, chúng ta tính $res=\sum_{i=1}^{m} {(a_i)}$, rồi với mỗi lần duyệt $i$ thoả mãn điều kiện $2 \le i \le n - m + 1$ (tức là di chuyển cửa sổ từ đoạn $[i-1, \ i+m-2]$ sang đoạn $[i, \ i+m-1]$), chúng ta sẽ lấy $res=res-a_{i-1}$ và $res=res+a_{i+m-1}$.
 
 **Độ phức tạp:** $O(n)$.
 
-:::important
-To-do: Làm sol.
-:::
+<details>
+<summary>Code mẫu</summary>
+
+```cpp
+#include <bits/stdc++.h>
+#pragma GCC optimize("O3, unroll-loops")
+#define ll long long
+#define ld long double
+#define st string
+
+using namespace std;
+
+const int N = 1e4 + 1;
+ll a[N];
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    int n, m;
+    cin >> n >> m;
+    for (int i = 1; i <= n; i++) {
+        cin >> a[i];
+    }
+    ll res = accumulate(a + 1, a + m + 1, (ll)0), ans = res;
+    for (int i = 2; i <= n - m + 1; i++) {
+        res -= a[i - 1];
+        res += a[i + m - 1];
+        ans = max(ans, res);
+    }
+    cout << ans;
+    return 0;
+}
+
+```
+</details>
 
 ---
 
@@ -208,9 +237,57 @@ Làm y những gì đề bài bảo (sử dụng mảng đếm).
 
 **Độ phức tạp:** $O(|a+b|+|c|)$ mỗi test.
 
-:::important
-Làm sol.
-:::
+<details>
+<summary>Code mẫu</summary>
+
+```cpp
+#include <bits/stdc++.h>
+#pragma GCC optimize("O3, unroll-loops")
+#define ll long long
+#define ld long double
+#define st string
+
+using namespace std;
+
+int cntab[26], cntc[26];
+
+void solve() {
+    fill(cntab, cntab + 26, 0);
+    fill(cntc, cntc + 26, 0);
+    st a, b, c;
+    cin >> a >> b >> c;
+    for (auto i:a) {
+        cntab[i - 'A']++;
+    }
+    for (auto i:b) {
+        cntab[i - 'A']++;
+    }
+    for (auto i:c) {
+        cntc[i - 'A']++;
+    }
+    for (int i = 0; i < 26; i++) {
+        if (cntab[i] != cntc[i]) {
+            cout << "NO\n";
+            return;
+        }
+    }
+    cout << "YES\n";
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    int tt;
+    cin >> tt;
+    while (tt--) {
+        solve();
+    }
+    return 0;
+}
+
+```
+</details>
 
 ### Cách 2:
 
