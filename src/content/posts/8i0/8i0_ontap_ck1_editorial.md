@@ -129,6 +129,54 @@ Chúng ta dùng sàng nguyên tố biến đổi để tìm số ước từ $1$
 
 **Độ phức tạp:** $O(n + \max(a) \log \max(a))$.
 
+<details>
+<summary>Code mẫu</summary>
+
+```cpp
+#include <bits/stdc++.h>
+#pragma GCC optimize("O3, unroll-loops")
+#define ll long long
+#define ld long double
+#define st string
+
+using namespace std;
+
+const int N = 1e5 + 1;
+int a[N], s[N];
+
+void sieve() {
+    for (ll i = 1; i < N; i++) {
+        for (ll j = i; j < N; j += i) {
+            s[j]++;
+        }
+    }
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    if (fopen("UOCSO.inp", "r")) {
+        freopen("UOCSO.inp", "r", stdin);
+        freopen("UOCSO.out", "w", stdout);
+    }
+    sieve();
+    int n, ans, maxx = 0;
+    cin >> n;
+    for (int i = 1; i <= n; i++) {
+        cin >> a[i];
+        if (s[a[i]] > maxx) {
+            maxx = s[a[i]];
+            ans = a[i];
+        }
+    }
+    cout << ans;
+    return 0;
+}
+
+```
+</details>
+
 ---
 
 # Bài 2: Số lớn nhất
@@ -146,6 +194,50 @@ Cho một xâu kí tự $S$ độ dài $N$ gồm các kí tự chữ cái: $\tex
 **Dữ liệu vào đảm bảo rằng xâu ký tự $S$ có ít nhất $1$ chữ số.**
 
 ## Lời giải
+
+### Subtask 1:
+
+Ta duyệt từng kí tự trong $S$, nếu kí tự đó là một chữ số, cập nhật $ans=\max(ans, s_i)$.
+
+**Độ phức tạp:** $O(n)$.
+
+<details>
+<summary>Code mẫu</summary>
+
+```cpp
+#include <bits/stdc++.h>
+#pragma GCC optimize("O3, unroll-loops")
+#define ll long long
+#define ld long double
+#define st string
+
+using namespace std;
+
+st s;
+int ans = 0;
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    freopen("MAXS.inp", "r", stdin);
+    freopen("MAXS.out", "w", stdout);
+    cin >> s;
+    for (auto i:s) {
+        if (isdigit(i)) {
+            ans = max(ans, i - '0');
+        }
+    }
+    cout << ans;
+    return 0;
+}
+
+```
+</details>
+
+### Subtask 2:
+
+### Subtask 3:
 
 ---
 
