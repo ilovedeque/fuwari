@@ -294,6 +294,8 @@ int main() {
 
 ### Subtask 3:
 
+Chúng ta làm như subtask 2, nhưng thay vào việc dùng hàm ```stoll()``` thì ta so sánh trực tiếp dùng xâu kí tự. Tuy nhiên, vẫn phải xét trường hợp khi $res$ có các chữ số $0$ ở đầu.
+
 **Độ phức tạp:** $O(n)$.
 
 <details>
@@ -378,7 +380,39 @@ int main() {
 
 ---
 
-# Bài 3
+# Bài 3: Số đặc biệt
+
+## Tóm tắt đề bài
+
+Cho $M$ cặp số nguyên dương $(a, b)$ thoả mãn $a \le b$, hãy đếm số lượng số có đúng $3$ ước nguyên dương đôi một khác nhau trong vùng $[a, b]$.
+
+**Ràng buộc:**
+
+* **Subtask 1:** $M \le 10^2; \ b \le 10^2$.
+* **Subtask 2:** $M \le 10^3; \ b \le 10^3$.
+* **Subtask 3:** $M \le 10^5; \ b \le 10^6$.
+
+## Lời giải
+
+### Subtask 1:
+
+Gọi $cnt$ là số lượng số thoả mãn yêu cầu.
+
+Với mỗi số $x$ trong vùng $[a, b]$, chúng ta duyệt từ $1$ đến $x$ để tìm số ước của nó, nếu số đó có $3$ ước khác nhau thì cập nhật $cnt = cnt + 1$.
+
+Cho $n = b - a$.
+
+**Độ phức tạp:** $O(n^2)$.
+
+### Subtask 2:
+
+Ta làm như subtask 1, nhưng chúng ta chỉ cần duyệt từ $1$ đến $\sqrt x$ là tìm được số ước của nó rồi.
+
+**Độ phức tạp:** $O(n \times \sqrt n)$.
+
+### Subtask 3:
+
+
 
 ---
 
