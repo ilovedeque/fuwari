@@ -402,13 +402,13 @@ Với mỗi số $x$ trong vùng $[a, b]$, chúng ta duyệt từ $1$ đến $x$
 
 Cho $n = b - a$.
 
-**Độ phức tạp:** $O(n^2)$.
+**Độ phức tạp:** $O(n^2)$ mỗi test.
 
 ### Subtask 2:
 
 Ta làm như subtask 1, nhưng chúng ta chỉ cần duyệt từ $1$ đến $\sqrt x$ là tìm được số ước của nó rồi.
 
-**Độ phức tạp:** $O(n \times \sqrt n)$.
+**Độ phức tạp:** $O(n \times \sqrt n)$ mỗi test.
 
 ### Subtask 3:
 
