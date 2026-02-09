@@ -404,16 +404,189 @@ Cho $n = b - a$.
 
 **Độ phức tạp:** $O(M \times n^2)$.
 
+<details>
+<summary>Code mẫu</summary>
+
+```cpp
+#include <bits/stdc++.h>
+#pragma GCC optimize("O3, unroll-loops")
+#define ll long long
+#define ld long double
+#define st string
+
+using namespace std;
+
+int m, a, b, cnt, r;
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    if (fopen("SNUM.inp", "r")) {
+        freopen("SNUM.inp", "r", stdin);
+        freopen("SNUM.out", "w", stdout);
+    }
+    cin >> m;
+    while (m--) {
+        cnt = 0;
+        cin >> a >> b;
+        for (int i = a; i <= b; i++) {
+            r = 0;
+            for (int j = 1; j <= i; j++) {
+                if (i % j == 0) {
+                    r++;
+                }
+            }
+            if (r == 3) {
+                cnt++;
+            }
+        }
+        cout << cnt << "\n";
+    }
+    return 0;
+}
+
+```
+</details>
+
 ### Subtask 2:
 
 Ta làm như subtask 1, nhưng chúng ta chỉ cần duyệt từ $1$ đến $\sqrt x$ là tìm được số ước của nó rồi.
 
 **Độ phức tạp:** $O(M \times n \sqrt n)$.
 
+<details>
+<summary>Code mẫu</summary>
+
+```cpp
+#include <bits/stdc++.h>
+#pragma GCC optimize("O3, unroll-loops")
+#define ll long long
+#define ld long double
+#define st string
+
+using namespace std;
+
+int m, a, b, cnt, r;
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    if (fopen("SNUM.inp", "r")) {
+        freopen("SNUM.inp", "r", stdin);
+        freopen("SNUM.out", "w", stdout);
+    }
+    cin >> m;
+    while (m--) {
+        cnt = 0;
+        cin >> a >> b;
+        for (int i = a; i <= b; i++) {
+            r = 0;
+            for (int j = 1; j * j <= i; j++) {
+                if (i % j == 0) {
+                    r++;
+                    if (j != i / j) {
+                        r++;
+                    }
+                }
+            }
+            if (r == 3) {
+                cnt++;
+            }
+        }
+        cout << cnt << "\n";
+    }
+    return 0;
+}
+
+```
+</details>
+
 ### Subtask 3:
 
+**Nhận xét:** Một số $x$ có đúng $3$ ước đôi một khác nhau chỉ và chỉ khi nó là **bình phương của một số nguyên tố**. Từ đó, bài toán trên trở thành tìm số lượng $x$ trong vùng $[a, b]$ sao cho $x=p^2$ với $p$ là số nguyên dương thoả mãn $p$ nguyên tố.
 
+Gọi $n=\max_{1 \le j \le M}(b_j)$
+
+Ta sẽ sàng nguyên tố từ $1$ đến $\sqrt n$, rồi tiền xử lí mảng công dồn $s$ với $s_i$ $(1 \le i \le n)$ là số lượng số thoả mãn yêu cầu trong vùng $[1, i]$. Sau đó, với mỗi truy vấn, số thoả mãn yêu cầu trong vùng $[a, b]$ là $s_b - s_{a-1}$.
+
+**Độ phức tạp:** $O(n \log \log n + M)$
+
+<details>
+<summary>Code mẫu</summary>
+
+```cpp
+#include <bits/stdc++.h>
+#pragma GCC optimize("O3, unroll-loops")
+#define ll long long
+#define ld long double
+#define st string
+
+using namespace std;
+
+const int N = 1e6 + 1;
+bool p[1001];
+int s[N], tt, a, b;
+
+bool f(int a) {
+    int x = sqrt(a);
+    if (x * x == a && p[x]) {
+        return 1;
+    }
+    return 0;
+}
+
+void sieve() {
+    fill(p, p + 1001, 1);
+    p[0] = p[1] = 0;
+    for (ll i = 2; i * i <= 1000; i++) {
+        if (p[i]) {
+            for (ll j = i * i; j <= 1000; j += i) {
+                p[j] = 0;
+            }
+        }
+    }
+    for (int i = 1; i < N; i++) {
+        if (f(i)) {
+            s[i] = s[i - 1] + 1;
+        }
+        else {
+            s[i] = s[i - 1];
+        }
+    }
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    if (fopen("SNUM.inp", "r")) {
+        freopen("SNUM.inp", "r", stdin);
+        freopen("SNUM.out", "w", stdout);
+    }
+    sieve();
+    cin >> tt;
+    while (tt--) {
+        cin >> a >> b;
+        cout << s[b] - s[a - 1] << "\n";
+    }
+    return 0;
+}
+
+```
+</details>
 
 ---
 
-# Bài 4
+# Bài 4: Dãy con không giảm
+
+## Tóm tắt đề bài
+
+## Lời giải
+
+### Subtask 1:
+
+### Subtask 2, 3:
+
+### Subtask 4:
