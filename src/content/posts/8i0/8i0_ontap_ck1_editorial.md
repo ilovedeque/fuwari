@@ -511,7 +511,7 @@ Gọi $N=\max_{1 \le j \le M}(b_j)$.
 
 Ta sẽ sàng nguyên tố từ $1$ đến $\sqrt N$, rồi tiền xử lí mảng công dồn $s$ với $s_i$ $(1 \le i \le n)$ là số lượng số thoả mãn yêu cầu trong vùng $[1, i]$. Sau đó, với mỗi truy vấn, số thoả mãn yêu cầu trong vùng $[a, b]$ là $s_b - s_{a-1}$.
 
-**Độ phức tạp:** $O(\sqrt N \log \log \sqrt N + M)$.
+**Độ phức tạp:** $O(N + M)$.
 
 <details>
 <summary>Code mẫu</summary>
