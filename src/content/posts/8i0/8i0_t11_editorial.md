@@ -21,7 +21,7 @@ Cho $N$ bộ số $a, b, c$. Trong mỗi bộ số đó, xác định xem $\max(
 
 Làm y những gì đề bài bảo.
 
-**Độ phức tạp:** $O(1)$ mỗi test.
+**Độ phức tạp:** $O(N)$.
 
 <details>
 <summary>Code mẫu</summary>
@@ -205,7 +205,7 @@ Sau khi duyệt xong, với mỗi chữ số $d$ từ $0$ đến $9$, chúng ta 
 
 Khi đó, $I=n-C-P$.
 
-**Độ phức tạp:** $O(n)$ mỗi truy vấn.
+**Độ phức tạp:** $O(q \times n)$.
 
 <details>
 <summary>Code mẫu</summary>

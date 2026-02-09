@@ -235,7 +235,7 @@ Gọi $|s|$ là độ dài xâu của một xâu kí tự.
 
 Làm y những gì đề bài bảo (sử dụng mảng đếm).
 
-**Độ phức tạp:** $O(|a+b|+|c|)$ mỗi test.
+**Độ phức tạp:** $O(T \times (|a+b|+|c|))$.
 
 <details>
 <summary>Code mẫu</summary>
@@ -293,7 +293,7 @@ int main() {
 
 Chúng ta chỉ cần sắp xếp lại các xâu kí tự rồi kiểm tra xem chúng có bằng nhau không.
 
-**Độ phức tạp:** $O(|a+b| \log |a+b| + |c| \log |c|)$ mỗi test.
+**Độ phức tạp:** $O(T \times (|a+b| \log |a+b| + |c| \log |c|))$.
 
 
 <details>
@@ -359,7 +359,7 @@ Vì số $x$ thoả mãn rất nhỏ, chúng ta có thể dùng hàm đệ quy �
 * Tiền xử lý: $2^{10}=1024$ lần duyệt.
 * Truy vấn: $\log 511$ mỗi test.
 
-$\implies$ Tổng thể: $O(1)$ mỗi test.
+$\implies$ Tổng thể: $O(T)$.
 
 <details>
 <summary>Code mẫu</summary>
