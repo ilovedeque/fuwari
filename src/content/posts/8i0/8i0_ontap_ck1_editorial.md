@@ -408,7 +408,7 @@ Cho $n = b - a$.
 
 Ta làm như subtask 1, nhưng chúng ta chỉ cần duyệt từ $1$ đến $\sqrt x$ là tìm được số ước của nó rồi.
 
-**Độ phức tạp:** $O(M \times (n \times \sqrt n))$.
+**Độ phức tạp:** $O(M \times n \sqrt n)$.
 
 ### Subtask 3:
 
