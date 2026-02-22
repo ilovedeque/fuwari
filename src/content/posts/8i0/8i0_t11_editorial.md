@@ -300,10 +300,8 @@ Chúng ta có thể duyệt qua tất cả trường hợp của bài toán sử
 
 Với vị trí thứ $i \ (1 \le i \le n)$, ta có $2$ cách lựa chọn là: thêm hoặc không thêm $a_i$ vào dãy con. Như vậy, với vị trị thứ $n$, ta sẽ có nhiều nhất $2^{20}=1048576$ trường hợp. Ta có thể thực hiện việc duyệt như sau:
 
-* Với vị trí thứ $i$, ta sẽ xét trường hợp thêm hoặc không thêm $a_i$ vào dãy con, đồng thời duy trì tổng hiện tại của dãy con.
-* Đến vị trí thứ $n$, ta kiểm tra xem dãy con đó có tổng bằng $S$ hay không. Nếu có, đây là một dãy thoả mãn và chúng ta sẽ in các chỉ số được chọn đó.
-* Thực hiện tìm kiếm với vị trí $i+1$, trong trường hợp đã tính cả $2$ trường hợp được tạo ra, ta quay lại vị trí trước đó để xét các nhánh khác.
-* Việc kiểm tra sẽ dừng lại sau khi chúng ta đã duyệt hết các đoạn con hoặc có một dãy con thoả mãn.
+* Với vị trí thứ $i \ (1 \le i \le n)$, ta sẽ xét trường hợp thêm hoặc không thêm $a_i$ vào dãy con, đồng thời duy trì tổng hiện tại của dãy con.
+* Đến vị trí thứ $n$ (sau khi xét các trường hợp), ta kiểm tra xem dãy con đó có tổng bằng $S$ hay không. Nếu có, đây là một dãy thoả mãn và chúng ta sẽ in các chỉ số được chọn đó.
 
 **Độ phức tạp:** $O(n \times 2^n)$.
 
