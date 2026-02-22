@@ -15,7 +15,10 @@ lang: 'vi'
 
 Cho mảng $a$ gồm $n$ phần tử. Tính $\max(a) \times \min(a)$ sau khi xoá đi phần tử $a_{n}$.
 
-**Ràng buộc:** $2 \le n \le 10^5; \ |a_i| \le 10^6$.
+**Ràng buộc:**
+
+* $2 \le n \le 10^5$.
+* $|a_i| \le 10^6 \ \forall \ i \in \{1, 2, ..., n\}$.
 
 ## Lời giải
 
@@ -64,7 +67,10 @@ int main() {
 
 Cho mảng $a$ gồm $n$ phần tử. In ra các phần tử sau khi xoá đi các phần tử trùng lặp và đã giữ bản sao cuối cùng.
 
-**Ràng buộc:** $1 \le n \le 10^5; \ -10^6 \le a_i \le 10^6$.
+**Ràng buộc:**
+
+* $1 \le n \le 10^5$.
+* $|a_i| \le 10^6 \ \forall \ i \in \{1, 2, ..., n\}$.
 
 ## Lời giải
 
@@ -127,7 +133,12 @@ int main() {
 
 Cho mảng $a$ gồm $n$ phần tử. Tính khoảng cách từ phần tử đầu tiên đến vị trí đầu tiên sao cho số lượng phần tử khác nhau tính đến thời điểm đó bằng $m$.
 
-**Ràng buộc:** $1 \le n \le 10^5; \ 1 \le m \le n; \ 1 \le a_i \le 10^9;$ mảng $a$ có ít nhất $m$ giá trị khác nhau.
+**Ràng buộc:**
+
+* $1 \le n \le 10^5$.
+* $1 \le m \le n$.
+* $1 \le a_i \le 10^9$.
+* Mảng $a$ có ít nhất $m$ giá trị khác nhau.
 
 ## Lời giải
 
@@ -179,7 +190,10 @@ int main() {
 
 Cho mảng $a$ gồm $n$ phần tử. Đếm số lượng phần tử mà xuất hiện từ $2$ lần trở lên.
 
-**Ràng buộc:** $1 \le n \le 10^5; \ |a_i| \le 10^6$.
+**Ràng buộc:**
+
+* $1 \le n \le 10^5$.
+* $|a_i| \le 10^6 \ \forall \ i \in \{1, 2, ..., n\}$.
 
 ## Lời giải
 

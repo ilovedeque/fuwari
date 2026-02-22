@@ -15,7 +15,10 @@ lang: 'vi'
 
 Cho $N$ bộ số $a, b, c$. Trong mỗi bộ số đó, xác định xem $\max(a, b, c) - \min(a, b, c) \le 25$ không. Nếu có, in ra $median(a, b, c)$, trong đó $median$ là trung vị. Nếu không, in ra "check again".
 
-**Ràng buộc:** $N \le 10^5; \ 0 \le a, b, c \le 100$.
+**Ràng buộc:**
+
+* $N \le 10^5$.
+* $0 \le a, b, c \le 100$.
 
 ## Lời giải
 

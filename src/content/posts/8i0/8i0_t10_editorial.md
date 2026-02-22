@@ -15,7 +15,10 @@ lang: 'vi'
 
 Cho ba số $h, p, s$ thể hiện giờ, phút, giây của một đồng hồ điện tử. Tính $h, p, s$ hiển thị trên màn hình sau $1$ giây.
 
-**Ràng buộc:** $0 \le h \le 23; \ 0 \le p, s \le 59$.
+**Ràng buộc:**
+
+* $0 \le h \le 23$.
+* $0 \le p, s \le 59$.
 
 ## Lời giải
 
@@ -69,7 +72,10 @@ int main() {
 
 Cho mảng $a$ gồm $m$ phần tử phân biệt trong khoảng $[1, n]$. In ra những số trong khoảng $[1, n]$ mà không xuất hiện trong mảng theo tứ tự từ bé đến lớn. Nếu không có số như vậy, in ra "HAPPY".
 
-**Ràng buộc:** $1 \le m \le n \le 10^6; \ 1 \le a_i \le n$.
+**Ràng buộc:**
+
+* $1 \le m \le n \le 10^6$.
+* $1 \le a_i \le n \ \forall \ i \in \{1, 2, ..., m\}$.
 
 ## Lời giải
 
@@ -130,7 +136,12 @@ $$
 \max_{1 \le i \le n-m+1}(\sum_{k=i}^{i+m-1} {(a_k)})
 $$
 
-**Ràng buộc:** $1 \le n \le 10^4; \ 1 \le m \le 10^3; \ m \le n; \ |a_i| \le 10^9$.
+**Ràng buộc:**
+
+* $1 \le n \le 10^4$.
+* $1 \le m \le 10^3$.
+* $m \le n$.
+* $|a_i| \le 10^9 \ \forall \ i \in \{1, 2, ..., n\}$.
 
 ## Lời giải
 
@@ -225,9 +236,10 @@ int main() {
 
 Cho $T$ bộ xâu kí tự $a, b, c$ gồm chữ cái viết hoa. Trong mỗi bộ $a, b, c$, xác định xem mỗi chữ cái trong xâu kí tự $a+b$ có xuất hiện đúng cùng số lần trong xâu kí tự $c$ hay không. Nếu có, in ra "YES", ngược lại, in ra "NO".
 
-Gọi $|s|$ là độ dài xâu của một xâu kí tự.
+**Ràng buộc:**
 
-**Ràng buộc:** $1 \le T \le 100; \ |a|, |b|, |c| \le 100$.
+* $1 \le T \le 100$.
+* $|a|, |b|, |c| \le 100$ với $|s|$ thể hiện độ dài xâu của một xâu kí tự.
 
 ## Lời giải
 
@@ -340,9 +352,12 @@ int main() {
 
 ## Tóm tắt đề bài
 
-Cho số tự nhiên $a$, tìm số $x$ lớn nhất thoả mãn $x \le a$ sao cho các chữ số trong biểu diễn thập phân của $x$ tăng ngặt từ trái sang phải (các số $x \le 9$ được coi là thoả mãn điều kiện).
+Cho $T$ số tự nhiên $a$. Với mỗi số $a$, tìm số $x$ lớn nhất thoả mãn $x \le a$ sao cho các chữ số trong biểu diễn thập phân của $x$ tăng ngặt từ trái sang phải (các số $x \le 9$ được coi là thoả mãn điều kiện).
 
-**Ràng buộc:** $T \le 10^6; \ 0 \le a \le 10^9$.
+**Ràng buộc:**
+
+* $T \le 10^6$.
+* $0 \le a \le 10^9$.
 
 ## Lời giải
 
