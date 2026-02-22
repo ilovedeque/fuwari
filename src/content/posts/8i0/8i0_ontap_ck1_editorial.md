@@ -17,8 +17,13 @@ Cho mảng $a$ gồm $n$ phần tử nguyên dương. Tìm phần tử có số 
 
 **Ràng buộc:**
 
-* **Subtask 1:** $n \le 10^3; \ a_i \le 10^3$.
-* **Subtask 2:** $n \le 10^5; \ a_i \le 10^5$.
+* $n \le 10^5$.
+* $a_i \le 10^5 \ \forall \ i \in \{1, 2, ..., n\}$.
+
+| Subtask | $\%$ số điểm |       Ràng buộc bổ sung       |
+|:-------:|:------------:|:-----------------------------:|
+|   $1$   |     $80$     | $n \le 10^3; \; a_i \le 10^3 \ \forall \ i \in \{1, 2, ..., n\}$ |
+|   $2$   |     $20$     |  Không có ràng buộc gì thêm.  |
 
 ## Lời giải
 
@@ -191,11 +196,14 @@ Cho một xâu kí tự $S$ độ dài $N$ gồm các kí tự chữ cái: $\tex
 
 **Ràng buộc:**
 
-* **Subtask 1:** $3 \le N \le 10^5; \ $các số xuất hiện trong $S$ có giá trị không vượt quá $9$.
-* **Subtask 2:** $3 \le N \le 10^5; \ $các số xuất hiện trong $S$ có giá trị không vượt quá $10^9$.
-* **Subtask 3:** $3 \le N \le 10^5$.
+* $3 \le N \le 10^5$.
+* $S$ có ít nhất $1$ chữ số.
 
-**Dữ liệu vào đảm bảo rằng xâu ký tự $S$ có ít nhất $1$ chữ số.**
+| Subtask | $\%$ số điểm |                      Ràng buộc bổ sung                       |
+|:-------:|:------------:|:------------------------------------------------------------:|
+|   $1$   |     $20$     |  Các số xuất hiện trong $S$ có giá trị không vượt quá $9$.   |
+|   $2$   |     $40$     | Các số xuất hiện trong $S$ có giá trị không vượt quá $10^9$. |
+|   $3$   |     $40$     |                 Không có ràng buộc gì thêm.                  |
 
 ## Lời giải
 
@@ -388,9 +396,14 @@ Cho $M$ cặp số nguyên dương $(a, b)$ thoả mãn $a \le b$, hãy đếm s
 
 **Ràng buộc:**
 
-* **Subtask 1:** $M \le 10^2; \ b \le 10^2$.
-* **Subtask 2:** $M \le 10^3; \ b \le 10^3$.
-* **Subtask 3:** $M \le 10^5; \ b \le 10^6$.
+* $M \le 10^5$.
+* $a \le b \le 10^6$.
+
+| Subtask | $\%$ số điểm |      Ràng buộc bổ sung      |
+|:-------:|:------------:|:---------------------------:|
+|   $1$   |     $20$     | $M \le 10^2; \; b \le 10^2$ |
+|   $2$   |     $30$     | $M \le 10^3; \; b \le 10^3$ |
+|   $3$   |     $50$     | Không có ràng buộc gì thêm. |
 
 ## Lời giải
 
