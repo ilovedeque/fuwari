@@ -596,9 +596,27 @@ int main() {
 
 ## Tóm tắt đề bài
 
+Cho mảng $a$ gồm $n$ phần tử nguyên dương. Hãy tìm các dãy con liên tiếp có tổng lớn nhất thoả mãn $a_i \le a_{i+1} \le \dots \le a_{j-1} \le a_j \ (1 \le i \le j \le n)$.
+
+**Ràng buộc:**
+
+* $1 \le n \le 10^6$.
+* $1 \le a_i \le 10^6$.
+
+| Subtask | $\%$ số điểm |              Ràng buộc bổ sung               |
+|:-------:|:------------:|:--------------------------------------------:|
+|   $1$   |     $20$     | $n=10$ và dãy ban đầu là một dãy không giảm. |
+|   $2$   |     $20$     |              $11 \le n \le 200$              |
+|   $3$   |     $20$     |             $201 \le n \le 10^3$             |
+|   $4$   |     $40$     |         Không có ràng buộc gì thêm.          |
+
 ## Lời giải
 
 ### Subtask 1:
+
+Vì dãy ban đầu là một dãy không giảm nên dãy con liên tiếp có tổng lớn nhất thoả mãn điều kiện chính là dãy đó. Vì vậy, chúng ta chỉ cần in ra tổng của mảng đó và các phần tử trong mảng đó.
+
+**Độ phức tạp:** $O(n)$.
 
 ### Subtask 2, 3:
 
