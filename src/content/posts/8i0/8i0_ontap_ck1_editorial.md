@@ -1,5 +1,5 @@
 ---
-title: Lời giải đề ôn tập số 1 cuối kì 1 lớp 8I0 - Chính
+title: Lời giải đề ôn tập số 1 cuối kì 1 lớp 8I0 (18-12-2025) - Chính
 published: 2026-02-06
 description: ''
 image: ''
@@ -596,12 +596,12 @@ int main() {
 
 ## Tóm tắt đề bài
 
-Cho mảng $a$ gồm $n$ phần tử nguyên dương. Hãy tìm các dãy con liên tiếp có tổng lớn nhất thoả mãn $a_i \le a_{i+1} \le \dots \le a_{j-1} \le a_j \ (1 \le i \le j \le n)$.
+Cho mảng $a$ gồm $n$ phần tử nguyên dương. Hãy tìm và in ra tổng lớn nhất của các dãy con liên tiếp cũng như tất cả các dãy con đó có thoả mãn $a_i \le a_{i+1} \le \dots \le a_{j-1} \le a_j \ (1 \le i \le j \le n)$.
 
 **Ràng buộc:**
 
 * $1 \le n \le 10^6$.
-* $1 \le a_i \le 10^6$.
+* $1 \le a_i \le 10^6 \ \forall \ i \in \{1, 2, ..., n\}$.
 
 | Subtask | $\%$ số điểm |              Ràng buộc bổ sung               |
 |:-------:|:------------:|:--------------------------------------------:|
@@ -618,6 +618,200 @@ Vì dãy ban đầu là một dãy không giảm nên dãy con liên tiếp có 
 
 **Độ phức tạp:** $O(n)$.
 
+<details>
+<summary>Code mẫu</summary>
+
+```cpp
+#include <bits/stdc++.h>
+#pragma GCC optimize("O3, unroll-loops")
+#define ll long long
+#define ld long double
+#define st string
+
+using namespace std;
+
+const int N = 1e6 + 1;
+ll a[N];
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    if (fopen("SUBSEQ.inp", "r")) {
+        freopen("SUBSEQ.inp", "r", stdin);
+        freopen("SUBSEQ.out", "w", stdout);
+    }
+    int n;
+    cin >> n;
+    ll s = 0;
+    for (int i = 1; i <= n; i++) {
+        cin >> a[i];
+        s += a[i];
+    }
+    cout << s << "\n";
+    for (int i = 1; i <= n; i++) {
+        cout << a[i] << " ";
+    }
+    return 0;
+}
+
+```
+</details>
+
 ### Subtask 2, 3:
 
+Chúng ta sẽ duyệt qua tất cả các dãy con $(i, j)$ $(1 \le i \le j \le n)$ để tìm $maxsum$, trong đó:
+
+* Với mỗi vị trí $i$, ta sẽ khởi tạo $sum = 0$.
+* Với mỗi vị trí $j$, nếu $j \gt i$ và $a_j \lt a_{j-1}$ thì ta sẽ lập tức thoát ra khỏi vòng đó vì khi đó, đoạn con đó không còn không giảm. Ngược lại, ta sẽ cộng $a_j$ vào $sum$ và so sánh với $maxsum$.
+
+Sau đó, ta sẽ duyệt lại qua tất cả các dãy con $(i, j)$, đảm bảo đủ điều kiện như trên, nhưng thay vì cập nhật $maxsum$ thì ta sẽ kiểm tra xem tổng của dãy đó có bằng $maxsum$ không, nếu có thì ta sẽ in ra dãy đó.
+
+**Độ phức tạp:** $O(n^2)$.
+
+<details>
+<summary>Code mẫu</summary>
+
+```cpp
+#include <bits/stdc++.h>
+#pragma GCC optimize("O3, unroll-loops")
+#define ll long long
+#define ld long double
+#define st string
+
+using namespace std;
+
+const int N = 1e6 + 1;
+ll a[N];
+vector <pair<int, int>> sol;
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+    if (fopen("SUBSEQ.inp", "r")) {
+        freopen("SUBSEQ.inp", "r", stdin);
+        freopen("SUBSEQ.out", "w", stdout);
+    }
+    int n;
+    cin >> n;
+    for (int i = 1; i <= n; i++) {
+        cin >> a[i];
+    }
+    ll ms = 0, res = 0;
+    for (int i = 1; i <= n; i++) {
+        res = a[i];
+        for (int j = i + 1; j <= n; j++) {
+            if (a[j] < a[j - 1]) {
+                break;
+            }
+            res += a[j];
+        }
+        ms = max(ms, res);
+    }
+    cout << ms << "\n";
+    for (int i = 1; i <= n; i++) {
+        res = a[i];
+        for (int j = i + 1; j <= n; j++) {
+            if (a[j] < a[j - 1]) {
+                break;
+            }
+            res += a[j];
+            if (res == ms) {
+                sol.emplace_back(i, j);
+            }
+        }
+    }
+    for (auto i:sol) {
+        for (int j = i.first; j <= i.second; j++) {
+            cout << a[j] << " ";
+        }
+        cout << "\n";
+    }
+    return 0;
+}
+
+```
+</details>
+
 ### Subtask 4:
+
+**Nhận xét:** Vì $a_i \gt 0 \ \forall \ i \in \{1, 2, ..., n\}$, nên trong một đoạn không giảm thì càng kéo dài sang bên phải thì $sum$ càng lớn.
+
+Từ đó, ta chỉ cần xét các đoạn con không giảm liên tiếp tối đa. Do vậy, với mỗi chỉ số $i \in \{1, 2, ..., n\}$, ta chỉ cần kiểm tra:
+
+* Nếu $a_i \ge a_{i-1}$, ta sẽ lấy $sum := sum + a_i$.
+* Ngược lại, ta sẽ so sánh với $maxsum$, rồi đặt $sum := a_i$ và tiếp tục đoạn mới.
+
+Sau đó, ta sẽ duyệt lại một lần nữa để in ra các dãy con đó.
+
+**Độ phức tạp:** $O(n)$.
+
+<details>
+<summary>Code mẫu</summary>
+
+```cpp
+#include <bits/stdc++.h>
+#pragma GCC optimize("O3, unroll-loops")
+#define ll long long
+#define ld long double
+#define st string
+
+using namespace std;
+
+const int N = 1e6 + 1;
+ll a[N];
+
+int main() {
+	ios_base::sync_with_stdio(false);
+	cin.tie(nullptr);
+	cout.tie(nullptr);
+	if (fopen("SUBSEQ.inp", "r")) {
+		freopen("SUBSEQ.inp", "r", stdin);
+		freopen("SUBSEQ.out", "w", stdout);
+	}
+	int n;
+	cin >> n;
+	for (int i = 1; i <= n; i++) {
+		cin >> a[i];
+	}
+	ll ms = 0, res = 0;
+	for (int i = 1; i <= n; i++) {
+		if (a[i] < a[i - 1]) {
+			ms = max(ms, res);
+			res = a[i];
+		}
+		else {
+			res += a[i];
+		}
+	}
+	ms = max(ms, res);
+	cout << ms << "\n";
+	res = 0;
+	int l = 1;
+	for (int i = 1; i <= n; i++) {
+		if (a[i] < a[i - 1]) {
+			if (res == ms) {
+				for (int j = l; j < i; j++) {
+					cout << a[j] << " ";
+				}
+				cout << "\n";
+			}
+			res = a[i];
+			l = i;
+		}
+		else {
+			res += a[i];
+		}
+	}
+	if (res == ms) {
+		for (int j = l; j <= n; j++) {
+			cout << a[j] << " ";
+		}
+		cout << "\n";
+	}
+	return 0;
+}
+
+```
+</details>
