@@ -31,51 +31,7 @@ Cho mảng $a$ gồm $n$ phần tử nguyên dương. Tìm phần tử có số 
 
 Chúng ta chỉ cần duyệt qua từng phần tử trong mảng $a$, rồi với mỗi phần tử $a_i$, ta duyệt $j$ từ $1$ đến $a_i$ và đếm số ước của số đó, rồi so sánh kết quả đó để ra được đáp án cần tìm.
 
-**Độ phức tạp:** $O(n \times a_i)$.
-
-<details>
-<summary>Code mẫu</summary>
-
-```cpp
-#include <bits/stdc++.h>
-#pragma GCC optimize("O3, unroll-loops")
-#define ll long long
-#define ld long double
-#define st string
-
-using namespace std;
-
-const int N = 1e5 + 1;
-int n, ans, maxx, s, cnt;
-
-int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-    if (fopen("UOCSO.inp", "r")) {
-        freopen("UOCSO.inp", "r", stdin);
-        freopen("UOCSO.out", "w", stdout);
-    }
-    cin >> n;
-    while (n--) {
-        cin >> s;
-        cnt = 0;
-        for (ll i = 1; i <= s; i++) {
-            if (s % i == 0) {
-                cnt++;
-            }
-        }
-        if (cnt > maxx) {
-            ans = s;
-            maxx = cnt;
-        }
-    }
-    cout << ans;
-    return 0;
-}
-
-```
-</details>
+**Độ phức tạp:** $O(n \cdot a_i)$.
 
 ### Subtask 2:
 
@@ -83,7 +39,7 @@ int main() {
 
 Chúng ta làm như subtask 1, nhưng thay vì duyệt $j$ từ $1$ đến $a_i$ thì ta chỉ cần duyệt $j$ từ $1$ đến $\sqrt {a_i}$ là có số ước của số đó rồi.
 
-**Độ phức tạp:** $O(n \times \sqrt {a_i})$.
+**Độ phức tạp:** $O(n \cdot \sqrt {a_i})$.
 
 <details>
 <summary>Code mẫu</summary>
@@ -209,96 +165,17 @@ Cho một xâu kí tự $S$ độ dài $N$ gồm các kí tự chữ cái: $\tex
 
 ### Subtask 1:
 
-Ta duyệt từng kí tự trong $S$, nếu kí tự đó là một chữ số, cập nhật $ans=\max(ans, S_i)$.
+Ta duyệt từng kí tự trong $S$, nếu kí tự đó là một chữ số, cập nhật $ans \leftarrow \max(ans, S_i)$.
 
 **Độ phức tạp:** $O(n)$.
-
-<details>
-<summary>Code mẫu</summary>
-
-```cpp
-#include <bits/stdc++.h>
-#pragma GCC optimize("O3, unroll-loops")
-#define ll long long
-#define ld long double
-#define st string
-
-using namespace std;
-
-st s;
-int ans = 0;
-
-int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-    freopen("MAXS.inp", "r", stdin);
-    freopen("MAXS.out", "w", stdout);
-    cin >> s;
-    for (auto i:s) {
-        if (isdigit(i)) {
-            ans = max(ans, i - '0');
-        }
-    }
-    cout << ans;
-    return 0;
-}
-
-```
-</details>
 
 ### Subtask 2:
 
 Gọi $res$ là một xâu kí tự chứa các chữ số.
 
-Ta duyệt từng kí tự trong $S$, nếu kí tự đó là một chữ số, cập nhật $res=res+S_i$. Còn nếu kí tự đó không phải là một chữ số, ta dùng hàm ```stoll()``` để chuyển xâu kí tự $res$ thành số nguyên, lấy $ans=\max(ans, res)$, rồi cập nhật ```res = ""```.
+Ta duyệt từng kí tự trong $S$, nếu kí tự đó là một chữ số, cập nhật $res \leftarrow res+S_i$. Còn nếu kí tự đó không phải là một chữ số, ta dùng hàm ```stoll()``` để chuyển xâu kí tự $res$ thành số nguyên, cập nhật $ans \leftarrow \max(ans, res)$, rồi cập nhật ```res = ""```.
 
 **Độ phức tạp:** $O(n)$.
-
-<details>
-<summary>Code mẫu</summary>
-
-```cpp
-#include <bits/stdc++.h>
-#pragma GCC optimize("O3, unroll-loops")
-#define ll long long
-#define ld long double
-#define st string
-
-using namespace std;
-
-st s, res;
-ll ans = 0;
-
-int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-    if (fopen("MAXS.inp", "r")) {
-        freopen("MAXS.inp", "r", stdin);
-        freopen("MAXS.out", "w", stdout);
-    }
-    cin >> s;
-    for (int i = 0; i < s.size(); i++) {
-        if (s[i] >= '0' && s[i] <= '9') {
-            res += s[i];
-        }
-        else {
-            if (res != "") {
-                ans = max(ans, stoll(res));
-            }
-            res = "";
-        }
-    }
-    if (res != "") {
-        ans = max(ans, stoll(res));
-    }
-    cout << ans;
-    return 0;
-}
-
-```
-</details>
 
 ### Subtask 3:
 
@@ -411,110 +288,17 @@ Cho $M$ cặp số nguyên dương $(a, b)$ thoả mãn $a \le b$, hãy đếm s
 
 Gọi $cnt$ là số lượng số thoả mãn yêu cầu.
 
-Với mỗi số $x$ trong vùng $[a, b]$, chúng ta duyệt từ $1$ đến $x$ để tìm số ước của nó, nếu số đó có $3$ ước khác nhau thì cập nhật $cnt = cnt + 1$.
+Với mỗi số $x$ trong vùng $[a, b]$, chúng ta duyệt từ $1$ đến $x$ để tìm số ước của nó, nếu số đó có $3$ ước khác nhau thì cập nhật $cnt \leftarrow cnt + 1$.
 
 Cho $n = b - a$.
 
-**Độ phức tạp:** $O(M \times n^2)$.
-
-<details>
-<summary>Code mẫu</summary>
-
-```cpp
-#include <bits/stdc++.h>
-#pragma GCC optimize("O3, unroll-loops")
-#define ll long long
-#define ld long double
-#define st string
-
-using namespace std;
-
-int m, a, b, cnt, r;
-
-int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-    if (fopen("SNUM.inp", "r")) {
-        freopen("SNUM.inp", "r", stdin);
-        freopen("SNUM.out", "w", stdout);
-    }
-    cin >> m;
-    while (m--) {
-        cnt = 0;
-        cin >> a >> b;
-        for (int i = a; i <= b; i++) {
-            r = 0;
-            for (int j = 1; j <= i; j++) {
-                if (i % j == 0) {
-                    r++;
-                }
-            }
-            if (r == 3) {
-                cnt++;
-            }
-        }
-        cout << cnt << "\n";
-    }
-    return 0;
-}
-
-```
-</details>
+**Độ phức tạp:** $O(M \cdot n^2)$.
 
 ### Subtask 2:
 
 Ta làm như subtask 1, nhưng chúng ta chỉ cần duyệt từ $1$ đến $\sqrt x$ là tìm được số ước của nó rồi.
 
-**Độ phức tạp:** $O(M \times n \sqrt n)$.
-
-<details>
-<summary>Code mẫu</summary>
-
-```cpp
-#include <bits/stdc++.h>
-#pragma GCC optimize("O3, unroll-loops")
-#define ll long long
-#define ld long double
-#define st string
-
-using namespace std;
-
-int m, a, b, cnt, r;
-
-int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-    if (fopen("SNUM.inp", "r")) {
-        freopen("SNUM.inp", "r", stdin);
-        freopen("SNUM.out", "w", stdout);
-    }
-    cin >> m;
-    while (m--) {
-        cnt = 0;
-        cin >> a >> b;
-        for (int i = a; i <= b; i++) {
-            r = 0;
-            for (int j = 1; j * j <= i; j++) {
-                if (i % j == 0) {
-                    r++;
-                    if (j != i / j) {
-                        r++;
-                    }
-                }
-            }
-            if (r == 3) {
-                cnt++;
-            }
-        }
-        cout << cnt << "\n";
-    }
-    return 0;
-}
-
-```
-</details>
+**Độ phức tạp:** $O(M \cdot n \sqrt n)$.
 
 ### Subtask 3:
 
@@ -618,121 +402,16 @@ Vì dãy ban đầu là một dãy không giảm nên dãy con liên tiếp có 
 
 **Độ phức tạp:** $O(n)$.
 
-<details>
-<summary>Code mẫu</summary>
-
-```cpp
-#include <bits/stdc++.h>
-#pragma GCC optimize("O3, unroll-loops")
-#define ll long long
-#define ld long double
-#define st string
-
-using namespace std;
-
-const int N = 1e6 + 1;
-ll a[N];
-
-int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-    if (fopen("SUBSEQ.inp", "r")) {
-        freopen("SUBSEQ.inp", "r", stdin);
-        freopen("SUBSEQ.out", "w", stdout);
-    }
-    int n;
-    cin >> n;
-    ll s = 0;
-    for (int i = 1; i <= n; i++) {
-        cin >> a[i];
-        s += a[i];
-    }
-    cout << s << "\n";
-    for (int i = 1; i <= n; i++) {
-        cout << a[i] << " ";
-    }
-    return 0;
-}
-
-```
-</details>
-
 ### Subtask 2, 3:
 
-Chúng ta sẽ duyệt qua tất cả các dãy con $(i, j)$ $(1 \le i \le j \le n)$ để tìm $maxsum$, trong đó:
+Chúng ta sẽ duyệt qua tất cả các dãy con $(i, j)$ $(1 \le i \le j \le n)$ để tìm $maxsum$ (với $maxsum=0$), trong đó:
 
 * Với mỗi vị trí $i$, ta sẽ khởi tạo $sum = 0$.
-* Với mỗi vị trí $j$, nếu $j \gt i$ và $a_j \lt a_{j-1}$ thì ta sẽ lập tức thoát ra khỏi vòng đó vì khi đó, đoạn con đó không còn không giảm. Ngược lại, ta sẽ cộng $a_j$ vào $sum$ và so sánh với $maxsum$.
+* Với mỗi vị trí $j$, nếu $j \gt i$ và $a_j \lt a_{j-1}$ thì ta sẽ lập tức thoát ra khỏi vòng đó vì khi đó, đoạn con đó không còn không giảm. Ngược lại, ta sẽ cập nhật $sum \leftarrow sum+a_j$ và $maxsum \leftarrow \max(maxsum, sum)$.
 
-Sau đó, ta sẽ duyệt lại qua tất cả các dãy con $(i, j)$, đảm bảo đủ điều kiện như trên, nhưng thay vì cập nhật $maxsum$ thì ta sẽ kiểm tra xem tổng của dãy đó có bằng $maxsum$ không, nếu có thì ta sẽ in ra dãy đó.
+Sau đó, ta sẽ duyệt lại qua tất cả các dãy con $(i, j)$, đảm bảo đủ điều kiện như trên, nhưng thay vì cập nhật $maxsum$ thì ta sẽ kiểm tra xem $sum$ có bằng $maxsum$ không, nếu có thì ta sẽ in ra dãy đó.
 
 **Độ phức tạp:** $O(n^2)$.
-
-<details>
-<summary>Code mẫu</summary>
-
-```cpp
-#include <bits/stdc++.h>
-#pragma GCC optimize("O3, unroll-loops")
-#define ll long long
-#define ld long double
-#define st string
-
-using namespace std;
-
-const int N = 1e6 + 1;
-ll a[N];
-vector <pair<int, int>> sol;
-
-int main() {
-    ios_base::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
-    if (fopen("SUBSEQ.inp", "r")) {
-        freopen("SUBSEQ.inp", "r", stdin);
-        freopen("SUBSEQ.out", "w", stdout);
-    }
-    int n;
-    cin >> n;
-    for (int i = 1; i <= n; i++) {
-        cin >> a[i];
-    }
-    ll ms = 0, res = 0;
-    for (int i = 1; i <= n; i++) {
-        res = a[i];
-        for (int j = i + 1; j <= n; j++) {
-            if (a[j] < a[j - 1]) {
-                break;
-            }
-            res += a[j];
-        }
-        ms = max(ms, res);
-    }
-    cout << ms << "\n";
-    for (int i = 1; i <= n; i++) {
-        res = a[i];
-        for (int j = i + 1; j <= n; j++) {
-            if (a[j] < a[j - 1]) {
-                break;
-            }
-            res += a[j];
-            if (res == ms) {
-                sol.emplace_back(i, j);
-            }
-        }
-    }
-    for (auto i:sol) {
-        for (int j = i.first; j <= i.second; j++) {
-            cout << a[j] << " ";
-        }
-        cout << "\n";
-    }
-    return 0;
-}
-
-```
-</details>
 
 ### Subtask 4:
 
@@ -740,8 +419,8 @@ int main() {
 
 Từ đó, ta chỉ cần xét các đoạn con không giảm liên tiếp tối đa. Do vậy, với mỗi chỉ số $i \in \{1, 2, ..., n\}$, ta chỉ cần kiểm tra:
 
-* Nếu $a_i \ge a_{i-1}$, ta sẽ lấy $sum := sum + a_i$.
-* Ngược lại, ta sẽ so sánh với $maxsum$, rồi đặt $sum := a_i$ và tiếp tục đoạn mới.
+* Nếu $a_i \ge a_{i-1}$, ta sẽ lấy $sum \leftarrow sum + a_i$.
+* Ngược lại, ta sẽ lấy $maxsum \leftarrow \max(maxsum, sum)$, rồi đặt $sum \leftarrow a_i$ và tiếp tục đoạn mới.
 
 Sau đó, ta sẽ duyệt lại một lần nữa để in ra các dãy con đó.
 
