@@ -42,7 +42,7 @@ Chúng ta làm như subtask 1, nhưng thay vì duyệt $j$ từ $1$ đến $a_i$
 **Độ phức tạp:** $O(n \cdot \sqrt {a_i})$.
 
 <details>
-<summary>Code mẫu</summary>
+<summary>Code tham khảo</summary>
 
 ```cpp
 #include <bits/stdc++.h>
@@ -95,7 +95,7 @@ Chúng ta dùng sàng nguyên tố biến đổi để tìm số ước từ $1$
 **Độ phức tạp:** $O(n + \max(a) \log \max(a))$.
 
 <details>
-<summary>Code mẫu</summary>
+<summary>Code tham khảo</summary>
 
 ```cpp
 #include <bits/stdc++.h>
@@ -184,7 +184,7 @@ Chúng ta làm như subtask 2, nhưng thay vào việc dùng hàm ```stoll()``` 
 **Độ phức tạp:** $O(n)$.
 
 <details>
-<summary>Code mẫu</summary>
+<summary>Code tham khảo</summary>
 
 ```cpp
 #include <bits/stdc++.h>
@@ -311,7 +311,7 @@ Ta sẽ sàng nguyên tố từ $1$ đến $\sqrt N$, rồi tiền xử lí mả
 **Độ phức tạp:** $O(N + M)$.
 
 <details>
-<summary>Code mẫu</summary>
+<summary>Code tham khảo</summary>
 
 ```cpp
 #include <bits/stdc++.h>
@@ -427,7 +427,7 @@ Sau đó, ta sẽ duyệt lại một lần nữa để in ra các dãy con đó
 **Độ phức tạp:** $O(n)$.
 
 <details>
-<summary>Code mẫu</summary>
+<summary>Code tham khảo</summary>
 
 ```cpp
 #include <bits/stdc++.h>

@@ -27,7 +27,7 @@ Làm y những gì đề bài bảo.
 **Độ phức tạp:** $O(n)$ (nếu duyệt qua mảng) hoặc $O(n \log n)$ (nếu dùng hàm sort).
 
 <details>
-<summary>Code mẫu</summary>
+<summary>Code tham khảo</summary>
 
 ```cpp
 #include <bits/stdc++.h>
@@ -84,7 +84,7 @@ Sau đó, chúng ta chỉ cần đảo lại mảng kết quả rồi in nó ra 
 **Độ phức tạp:** $O(n)$.
 
 <details>
-<summary>Code mẫu</summary>
+<summary>Code tham khảo</summary>
 
 ```cpp
 #include <bits/stdc++.h>
@@ -147,7 +147,7 @@ Chúng ta chỉ cần đếm số lượng phần tử khác nhau để kiểm t
 **Độ phức tạp:** $O(n)$.
 
 <details>
-<summary>Code mẫu</summary>
+<summary>Code tham khảo</summary>
 
 ```cpp
 #include <bits/stdc++.h>
@@ -202,7 +202,7 @@ Chúng ta chỉ cần dùng một mảng đếm để đếm số lượng các 
 **Độ phức tạp:** $O(n)$.
 
 <details>
-<summary>Code mẫu</summary>
+<summary>Code tham khảo</summary>
 
 ```cpp
 #include <bits/stdc++.h>

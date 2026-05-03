@@ -27,7 +27,7 @@ Làm y những gì đề bài bảo.
 **Độ phức tạp:** $O(N)$.
 
 <details>
-<summary>Code mẫu</summary>
+<summary>Code tham khảo</summary>
 
 ```cpp
 #include <bits/stdc++.h>
@@ -102,7 +102,7 @@ Vì vậy, chúng ta sẽ dùng kỹ thuật hai con trỏ (two pointers) để 
 **Độ phức tạp:** $O(n)$.
 
 <details>
-<summary>Code mẫu</summary>
+<summary>Code tham khảo</summary>
 
 ```cpp
 #include <bits/stdc++.h>
@@ -178,7 +178,7 @@ Khi đó, $I=n-C-P$.
 **Độ phức tạp:** $O(q \cdot n)$.
 
 <details>
-<summary>Code mẫu</summary>
+<summary>Code tham khảo</summary>
 
 ```cpp
 #include <bits/stdc++.h>
@@ -274,7 +274,7 @@ Chúng ta có thể dùng quy hoạch động (Dynamic Programming - DP) để g
 **Độ phức tạp:** $O(n \cdot \text{sum}(a))$.
 
 <details>
-<summary>Code mẫu</summary>
+<summary>Code tham khảo</summary>
 
 ```cpp
 #include <bits/stdc++.h>
