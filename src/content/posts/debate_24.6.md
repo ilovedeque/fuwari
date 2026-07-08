@@ -15,7 +15,7 @@ lang: 'vi'
 
 ## Analysis
 
-![info slide](/src/content/posts/debate_24.6/info_slide.png)
+![info slide](/public/debate_24.6/info_slide.png)
 
 ## Preparation (Opposition, Speaker 2)
 
