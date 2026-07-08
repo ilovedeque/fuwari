@@ -27,6 +27,6 @@ $(1)$ True knowledge does not begin with knowing everything but with questioning
 
 ## Sample Writing
 
-![Essay Page 1](/writing_week_1/essay_page_1.jpg)
+![Essay Page 1](/public/writing_week_1/essay_page_1.jpg)
 
-![Essay Page 2](/writing_week_1/essay_page_2.jpg)
+![Essay Page 2](/public/writing_week_1/essay_page_2.jpg)
